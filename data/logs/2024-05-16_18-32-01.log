@@ -1,0 +1,45 @@
+2024-05-16 18:32:01 | INF | Database: table 'users' has been connected!
+2024-05-16 18:32:01 | DEB | Using proactor: IocpProactor
+2024-05-16 18:32:01 | DEB | Make request: "getMe" with data: "{}" and files "None"
+2024-05-16 18:32:01 | DEB | Response for getMe: [200] "'{"ok":true,"result":{"id":6774164184,"is_bot":true,"first_name":"\\u26d4\\ufe0fTEST-BOT-gas_bot\\u26d4\\ufe0f","username":"testik_gas_check_bot","can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":false,"can_connect_to_business":false}}'"
+2024-05-16 18:32:01 | INF | Bot: \u26d4\ufe0fTEST-BOT-gas_bot\u26d4\ufe0f [@testik_gas_check_bot]
+2024-05-16 18:32:01 | DEB | Make request: "getWebhookInfo" with data: "{}" and files "None"
+2024-05-16 18:32:01 | DEB | Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
+2024-05-16 18:32:01 | DEB | Make request: "deleteWebhook" with data: "{'drop_pending_updates': True}" and files "None"
+2024-05-16 18:32:01 | DEB | Response for deleteWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook is already deleted"}'"
+2024-05-16 18:32:01 | WAR | Updates were skipped successfully.
+2024-05-16 18:32:01 | DEB | Make request: "setMyCommands" with data: "{'commands': '[{"command": "/settings", "description": "настройки"}, {"command": "/help", "description": "поддержка"}]'}" and files "None"
+2024-05-16 18:32:01 | DEB | Response for setMyCommands: [200] "'{"ok":true,"result":true}'"
+2024-05-16 18:32:01 | DEB | GasBooot has been started!
+2024-05-16 18:32:01 | INF | Start polling.
+2024-05-16 18:32:01 | DEB | Make request: "getWebhookInfo" with data: "{}" and files "None"
+2024-05-16 18:32:01 | DEB | Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
+2024-05-16 18:32:01 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-05-16 18:32:05 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":694893266,\n"message":{"message_id":845,"from":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"ru","is_premium":true},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1715873525,"text":"/settings","entities":[{"offset":0,"length":9,"type":"bot_command"}]}}]}'"
+2024-05-16 18:32:05 | DEB | Received 1 updates.
+2024-05-16 18:32:05 | DEB | Make request: "sendMessage" with data: "{'chat_id': 868320310, 'text': '*Настройте параметры бота*', 'parse_mode': 'markdown', 'reply_markup': '{"inline_keyboard": [[{"text": "Установить интервал", "callback_data": "set_interval"}, {"text": "Выключатель", "callback_data": "turn_on_off"}]]}'}" and files "None"
+2024-05-16 18:32:05 | DEB | Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":846,"from":{"id":6774164184,"is_bot":true,"first_name":"\\u26d4\\ufe0fTEST-BOT-gas_bot\\u26d4\\ufe0f","username":"testik_gas_check_bot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1715873525,"text":"\\u041d\\u0430\\u0441\\u0442\\u0440\\u043e\\u0439\\u0442\\u0435 \\u043f\\u0430\\u0440\\u0430\\u043c\\u0435\\u0442\\u0440\\u044b \\u0431\\u043e\\u0442\\u0430","entities":[{"offset":0,"length":24,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u0423\\u0441\\u0442\\u0430\\u043d\\u043e\\u0432\\u0438\\u0442\\u044c \\u0438\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b","callback_data":"set_interval"},{"text":"\\u0412\\u044b\\u043a\\u043b\\u044e\\u0447\\u0430\\u0442\\u0435\\u043b\\u044c","callback_data":"turn_on_off"}]]}}}'"
+2024-05-16 18:32:05 | DEB | Make request: "getUpdates" with data: "{'offset': 694893267, 'timeout': 20}" and files "None"
+2024-05-16 18:32:06 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":694893267,\n"callback_query":{"id":"3729407337700325134","from":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"ru","is_premium":true},"message":{"message_id":846,"from":{"id":6774164184,"is_bot":true,"first_name":"\\u26d4\\ufe0fTEST-BOT-gas_bot\\u26d4\\ufe0f","username":"testik_gas_check_bot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1715873525,"text":"\\u041d\\u0430\\u0441\\u0442\\u0440\\u043e\\u0439\\u0442\\u0435 \\u043f\\u0430\\u0440\\u0430\\u043c\\u0435\\u0442\\u0440\\u044b \\u0431\\u043e\\u0442\\u0430","entities":[{"offset":0,"length":24,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u0423\\u0441\\u0442\\u0430\\u043d\\u043e\\u0432\\u0438\\u0442\\u044c \\u0438\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b","callback_data":"set_interval"},{"text":"\\u0412\\u044b\\u043a\\u043b\\u044e\\u0447\\u0430\\u0442\\u0435\\u043b\\u044c","callback_data":"turn_on_off"}]]}},"chat_instance":"1815754577154058198","data":"turn_on_off"}}]}'"
+2024-05-16 18:32:06 | DEB | Received 1 updates.
+2024-05-16 18:32:06 | DEB | Make request: "answerCallbackQuery" with data: "{'callback_query_id': '3729407337700325134'}" and files "None"
+2024-05-16 18:32:06 | DEB | Make request: "getUpdates" with data: "{'offset': 694893268, 'timeout': 20}" and files "None"
+2024-05-16 18:32:06 | DEB | Response for answerCallbackQuery: [200] "'{"ok":true,"result":true}'"
+2024-05-16 18:32:06 | ERR | Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<Dispatcher._process_polling_updates() done, defined at C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py:407> exception=TypeError('turn_on_off_func() takes 1 positional argument but 2 were given')>
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 415, in _process_polling_updates
+    for responses in itertools.chain.from_iterable(await self.process_updates(updates, fast)):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 235, in process_updates
+    return await asyncio.gather(*tasks)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 283, in process_update
+    return await self.callback_query_handlers.notify(update.callback_query)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\handler.py", line 117, in notify
+    response = await handler_obj.handler(*args, **partial_data)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\core\commands\commands.py", line 85, in turn_on_off_callback_func
+    await turn_on_off_func(user_id, interval)
+TypeError: turn_on_off_func() takes 1 positional argument but 2 were given
+2024-05-16 18:32:22 | INF | Stop polling...
+2024-05-16 18:32:22 | WAR | Goodbye!

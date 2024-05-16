@@ -1,0 +1,8 @@
+CMD_START = 'start'
+CMD_SETTINGS = 'settings'
+
+CMD_CLIENT = [CMD_SETTINGS, CMD_START]
+CMD_ADMIN = []
+
+
+INTERVALS = {}
