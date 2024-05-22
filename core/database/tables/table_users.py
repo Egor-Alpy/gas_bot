@@ -36,6 +36,16 @@ class DataBaseUsers(DataBase):
         return rows
 
     def get_user_interval(self, user_id):
-        self.cursor.execute(f"SELECT {KeyUsers.interval} FROM users")
+        self.cursor.execute(f"SELECT {KeyUsers.interval} FROM users WHERE user_id = {user_id}")
         row = self.cursor.fetchall()
-        return row[0]
+        return row[0][0]
+
+    def set_new_interval(self, user_id, interval):
+        self.cursor.execute(f"UPDATE users SET {KeyUsers.interval} = '{interval}' WHERE {KeyUsers.user_id} = '{user_id}'")
+        self.database.commit()
+
+    def add_user_id(self, user_id):
+        self.cursor.execute(f'INSERT')
+
+    def del_user_id(self, user_id):
+        pass

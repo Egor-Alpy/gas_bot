@@ -13,6 +13,8 @@ from data.config import PROJECT_NAME
 from core.commands.commands import set_commands
 from core.logger_config import logger
 from core.bot_creation import dp
+from core.commands.commands import start_sending
+import asyncio
 
 
 # ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP -----
@@ -20,6 +22,7 @@ async def on_startup(_):
     pass
     await set_commands()
     logger.debug(f'{PROJECT_NAME} has been started!')
+    asyncio.create_task(start_sending())
 
 
 def main():
