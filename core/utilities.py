@@ -11,3 +11,4 @@ async def proxy_get_value(state, key):
 async def proxy_get_all(state):
     async with state.proxy() as data:
         return data.as_dict()
+

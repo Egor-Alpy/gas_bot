@@ -17,8 +17,8 @@ class DataBaseUsers(DataBase):
             {KeyUsers.username} TEXT,
             {KeyUsers.name} TEXT,
             {KeyUsers.surname} TEXT,
-            {KeyUsers.interval} INT DEFAULT {60 * 60 * 24}
-            
+            {KeyUsers.interval} INT DEFAULT {30},
+            {KeyUsers.subscribed} TEXT DEFAULT False
             )""")
         self.database.commit()
 
@@ -44,8 +44,12 @@ class DataBaseUsers(DataBase):
         self.cursor.execute(f"UPDATE users SET {KeyUsers.interval} = '{interval}' WHERE {KeyUsers.user_id} = '{user_id}'")
         self.database.commit()
 
-    def add_user_id(self, user_id):
-        self.cursor.execute(f'INSERT')
+    def set_subscription_status(self, subscription_status, user_id):
+        self.cursor.execute(f"UPDATE users SET {KeyUsers.subscribed} = '{subscription_status}' WHERE {KeyUsers.user_id} = '{user_id}'")
+        self.database.commit()
 
-    def del_user_id(self, user_id):
-        pass
+    def get_subscription_status(self, user_id):
+        self.cursor.execute(f"SELECT {KeyUsers.subscribed} FROM users WHERE user_id = {user_id}")
+        row = self.cursor.fetchall()
+        if row != []:
+            return row[0][0]

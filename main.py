@@ -16,13 +16,18 @@ from core.bot_creation import dp
 from core.commands.commands import start_sending
 import asyncio
 
+from threading import Thread
+
 
 # ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP -----
 async def on_startup(_):
     pass
     await set_commands()
     logger.debug(f'{PROJECT_NAME} has been started!')
-    asyncio.create_task(start_sending())
+    a = asyncio.create_task(start_sending())
+
+
+
 
 
 def main():
