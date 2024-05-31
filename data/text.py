@@ -1,5 +1,5 @@
 from web3 import Web3
-from core.logger_config import logger
+from core.logger_config import logger, PROJECT_NAME
 import requests
 
 from core.database.database_main import table_channels
@@ -26,7 +26,10 @@ MSG = {
         },
         'ADMIN': {
             'SEND_MSG': {
-                'INPUT': '*⚠️Введите сообщение, которое хотите отправить всем пользователям бота:*',
+                'INPUT': 'Пришлите *пост*, который вы хотите разослать всем пользователям:',
+                'CHECK': '*Проверьте пост на корректность!*\n'
+                         '\n'
+                         'Вы уверены, что хотите отправить этот пост всем пользователям бота?\n'
             },
             'CHANNEL': {
                 'ADD': '*Пришлите id или @тег канала, который хотите добавить.*\n(предварительно выдайте Боту права '
@@ -46,7 +49,9 @@ MSG = {
                     f'\n'
         },
         'SETTINGS': {
-            'MENU': '*Настройте параметры бота*',
+            'MENU': f'*Привет, это меню {PROJECT_NAME}!*\n'
+                    f'\n'
+                    f'Здесь Вы можете регулировать работу бота.',
             'INTERVAL': '*Выберите интервал, с которым Вы будете получать информацию о цене газа в сети:*',
             'STOP': 'Бот остановлен!',
             'START': 'Бот снова работает!'
@@ -89,13 +94,14 @@ def get_msg_gas_price():
     gas = round(con_web3.eth.gas_price / 10 ** 9, 2)
     if gas < 20:
         indicator = '🟩'
-    elif 20 <= gas < 40 :
+    elif 20 <= gas < 40:
         indicator = '🟧'
     else:
         indicator = '🟥'
 
-    msg = (f'*{indicator} ETH: {gas} GWEI\n\nBTC:* ${prices["BTCUSDT"]}\n*ETH:* ${prices["ETHUSDT"]}\n*BNB:* ${prices["BNBUSDT"]}\n*SOL:* ${prices["SOLUSDT"]}\n*TON'
-           f':* ${prices["TONUSDT"]}')
+    msg = (
+        f'*{indicator} ETH: {gas} GWEI\n\nBTC:* ${prices["BTCUSDT"]}\n*ETH:* ${prices["ETHUSDT"]}\n*BNB:* ${prices["BNBUSDT"]}\n*SOL:* ${prices["SOLUSDT"]}\n*TON'
+        f':* ${prices["TONUSDT"]}')
     return msg
 
 
@@ -115,7 +121,3 @@ def get_price():
             logger.info(f"{e} - Error in getting cryptocurrency [{symbol}] prices!")
 
     return tickers_prices
-
-
-
-

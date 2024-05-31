@@ -3,10 +3,8 @@ from data.text import CMD_START, CMD_ADMIN, CMD_CLIENT, CMD_MENU, CMD_HELP, CMD_
     CMD_SEND_MSG
 from core.commands.client import *
 from core.commands.admin import *
-from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from core.database.database_main import table_users
 from core.logger_config import logger
-from core.keyboards import get_channels_inlinekeyboard_4delete
 
 
 async def set_commands():
