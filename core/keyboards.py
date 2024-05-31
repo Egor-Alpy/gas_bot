@@ -9,9 +9,9 @@ def get_interval_markup(callback):
     markup_interval = InlineKeyboardMarkup()
     current_interval = table_users.get_user_interval(callback.message.chat.id)
     btn_list = []
-    btn_name_list = {'30 сек': 'interval_30', '1 мин': 'interval_60', '5 мин': 'interval_300', '15 мин': 'interval_900',
-                     '1 ч': 'interval_3600', '4 ч': 'interval_14400', '12 ч': 'interval_43200',
-                     '24 ч': 'interval_86400'}
+    btn_name_list = {'30 сек': 'interval_30', '1 мин': 'interval_60', '3 мин': 'interval_180', '5 мин': 'interval_300',
+                     '15 мин': 'interval_900', '30мин': 'interval_1800', '1 ч': 'interval_3600', '4 ч': 'interval_14400',
+                     '12 ч': 'interval_43200', '24 ч': 'interval_86400'}
     for btn_name, callback_name in btn_name_list.items():
         if str(current_interval) == callback_name.split('_')[1]:
             btn_name = '»»»    ' + btn_name + '    «««'

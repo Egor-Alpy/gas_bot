@@ -7,6 +7,24 @@ from core.database.database_main import table_users, table_channels
 from core.states import SendMsgToAllStatesGroup, AddChannelStatesGroup
 from core.utilities import proxy_add_value, proxy_get_value
 from core.logger_config import logger
+from data.text import MSG
+from core.keyboards import get_channels_inlinekeyboard_4delete
+
+
+async def add_channel(message: types.Message):
+    await AddChannelStatesGroup.get_id.set()
+    await bot.send_message(chat_id=message.chat.id, text=MSG['RUS']['CHANNEL']['ADD'], parse_mode='markdown')
+
+
+async def del_channel(message: types.Message):
+    await bot.send_message(chat_id=message.chat.id, text=MSG['RUS']['CHANNEL']['DEL'], parse_mode='markdown', reply_markup=get_channels_inlinekeyboard_4delete())
+
+
+async def send_msg_to_all(message: types.Message):
+    await SendMsgToAllStatesGroup.get_msg.set()
+    await bot.send_message(chat_id=message.chat.id,
+                           text=MSG['RUS']['ADMIN']['SEND_MSG']['INPUT'],
+                           parse_mode='markdown')
 
 
 @dp.message_handler(content_types=types.ContentType.ANY, state=SendMsgToAllStatesGroup.get_msg)
