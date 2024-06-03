@@ -27,12 +27,9 @@ async def on_startup(_):
     a = asyncio.create_task(start_sending())
 
 
-
-
-
 def main():
-    executor.start_polling(dispatcher=dp, skip_updates=True, on_startup=on_startup)
-    '''while True:
+    # executor.start_polling(dispatcher=dp, skip_updates=True, on_startup=on_startup)
+    while True:
         try:
             executor.start_polling(
                 dispatcher=dp,
@@ -42,7 +39,7 @@ def main():
             # logger.debug(f'{PROJECT_NAME} has been finished!')
         except Exception as e:
             # logger.error(f'Exception in the main execution block: {e}')
-            time.sleep(5)'''
+            time.sleep(5)
 
 
 if __name__ == '__main__':

@@ -18,7 +18,8 @@ class DataBaseUsers(DataBase):
             {KeyUsers.name} TEXT,
             {KeyUsers.surname} TEXT,
             {KeyUsers.interval} INT DEFAULT {30},
-            {KeyUsers.subscribed} TEXT DEFAULT False
+            {KeyUsers.subscribed} TEXT DEFAULT False,
+            {KeyUsers.language} TEXT DEFAULT RUS
             )""")
         self.database.commit()
 
@@ -41,15 +42,30 @@ class DataBaseUsers(DataBase):
         return row[0][0]
 
     def set_new_interval(self, user_id, interval):
-        self.cursor.execute(f"UPDATE users SET {KeyUsers.interval} = '{interval}' WHERE {KeyUsers.user_id} = '{user_id}'")
+        self.cursor.execute(
+            f"UPDATE users SET {KeyUsers.interval} = '{interval}' WHERE {KeyUsers.user_id} = '{user_id}'")
         self.database.commit()
 
     def set_subscription_status(self, subscription_status, user_id):
-        self.cursor.execute(f"UPDATE users SET {KeyUsers.subscribed} = '{subscription_status}' WHERE {KeyUsers.user_id} = '{user_id}'")
+        self.cursor.execute(
+            f"UPDATE users SET {KeyUsers.subscribed} = '{subscription_status}' WHERE {KeyUsers.user_id} = '{user_id}'")
         self.database.commit()
 
     def get_subscription_status(self, user_id):
-        self.cursor.execute(f"SELECT {KeyUsers.subscribed} FROM users WHERE user_id = {user_id}")
+        self.cursor.execute(f"SELECT {KeyUsers.subscribed} FROM users WHERE {KeyUsers.user_id} = {user_id}")
         row = self.cursor.fetchall()
-        if row != []:
+        if row:
             return row[0][0]
+        return
+
+    def get_user_language(self, user_id: str):
+        self.cursor.execute(f"SELECT {KeyUsers.language} FROM users WHERE {KeyUsers.user_id} = '{user_id}'")
+        row = self.cursor.fetchall()
+        if row:
+            print(row[0][0])
+            return row[0][0]
+
+    def set_new_language(self, user_id, language):
+        self.cursor.execute(
+            f"UPDATE users SET {KeyUsers.language} = '{language}' WHERE {KeyUsers.user_id} = '{user_id}'")
+        self.database.commit()

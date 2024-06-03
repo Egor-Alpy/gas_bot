@@ -5,6 +5,7 @@ class KeyUsers:
     surname = 'surname'
     interval = 'interval'
     subscribed = 'subscribed'
+    language = 'language'
 
 
 class KeyChannels:

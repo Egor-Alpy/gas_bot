@@ -35,7 +35,8 @@ class DataBaseChannels(DataBase):
 
     def add_channel_to_db(self, channel_id: str, channel_tag: str, channel_name: str):
         self.cursor.execute(
-            f"INSERT INTO channels({KeyChannels.channel_id}, {KeyChannels.channel_tag}, {KeyChannels.channel_name}) VALUES('{channel_id}', '{channel_tag}', '{channel_name}')")
+            f"INSERT INTO channels({KeyChannels.channel_id}, {KeyChannels.channel_tag}, {KeyChannels.channel_name}) "
+            f"VALUES('{channel_id}', '{channel_tag}', '{channel_name}')")
         self.database.commit()
 
     def del_channel(self, channel_id: str):
