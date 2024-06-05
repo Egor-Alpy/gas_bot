@@ -1,0 +1,56 @@
+2024-06-05 15:38:23 | DEB | Consider installing rusty-rlp to improve pyrlp performance with a rust basedbackend. Not currently functional for Python 3.11
+2024-06-05 15:38:24 | INF | Database: table 'users' has been connected!
+2024-06-05 15:38:24 | INF | Database: table 'channels' has been connected!
+2024-06-05 15:38:24 | DEB | Using proactor: IocpProactor
+2024-06-05 15:38:24 | DEB | Starting new HTTPS connection (1): api.bybit.com:443
+2024-06-05 15:38:24 | DEB | https://api.bybit.com:443 "GET /v2/public/tickers?symbol=BTCUSDT HTTP/1.1" 200 754
+2024-06-05 15:38:24 | DEB | Starting new HTTPS connection (1): api.bybit.com:443
+2024-06-05 15:38:25 | DEB | https://api.bybit.com:443 "GET /v2/public/tickers?symbol=ETHUSDT HTTP/1.1" 200 745
+2024-06-05 15:38:25 | DEB | Starting new HTTPS connection (1): api.bybit.com:443
+2024-06-05 15:38:25 | DEB | https://api.bybit.com:443 "GET /v2/public/tickers?symbol=BNBUSDT HTTP/1.1" 200 739
+2024-06-05 15:38:25 | DEB | Starting new HTTPS connection (1): api.bybit.com:443
+2024-06-05 15:38:26 | DEB | https://api.bybit.com:443 "GET /v2/public/tickers?symbol=SOLUSDT HTTP/1.1" 200 752
+2024-06-05 15:38:26 | DEB | Starting new HTTPS connection (1): api.bybit.com:443
+2024-06-05 15:38:26 | DEB | https://api.bybit.com:443 "GET /v2/public/tickers?symbol=TONUSDT HTTP/1.1" 200 745
+2024-06-05 15:38:26 | DEB | Making request. Method: eth_gasPrice
+2024-06-05 15:38:26 | DEB | Making request HTTP. URI: https://rpc.ankr.com/eth, Method: eth_gasPrice
+2024-06-05 15:38:26 | DEB | Session cached: https://rpc.ankr.com/eth, <requests.sessions.Session object at 0x0000028DD526D090>
+2024-06-05 15:38:26 | DEB | Starting new HTTPS connection (1): rpc.ankr.com:443
+2024-06-05 15:38:26 | DEB | https://rpc.ankr.com:443 "POST /eth HTTP/1.1" 200 47
+2024-06-05 15:38:26 | DEB | Getting response HTTP. URI: https://rpc.ankr.com/eth, Method: eth_gasPrice, Response: {'jsonrpc': '2.0', 'id': 0, 'result': '0x49fe84d78'}
+2024-06-05 15:38:26 | DEB | Make request: "sendMessage" with data: "{'chat_id': '868320310', 'text': '*\U0001f7e9 ETH: 19.86 GWEI*\n\n*BTC:* $70781.1\n*ETH:* $3807.5\n*BNB:* $699.8\n*SOL:* $172.3\n*TON:* $7.24\n\n*Market Cap:* 1 trln $\n*Volume for 24 h:* 2 mlrd $\n*Dominance:* BTC 3% ETH 4%', 'parse_mode': 'markdown'}" and files "None"
+2024-06-05 15:38:27 | DEB | Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":1981,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717591107,"text":"\\ud83d\\udfe9 ETH: 19.86 GWEI\\n\\nBTC: $70781.1\\nETH: $3807.5\\nBNB: $699.8\\nSOL: $172.3\\nTON: $7.24\\n\\nMarket Cap: 1 trln $\\nVolume for 24 h: 2 mlrd $\\nDominance: BTC 3% ETH 4%","entities":[{"offset":0,"length":18,"type":"bold"},{"offset":20,"length":4,"type":"bold"},{"offset":34,"length":4,"type":"bold"},{"offset":47,"length":4,"type":"bold"},{"offset":59,"length":4,"type":"bold"},{"offset":71,"length":4,"type":"bold"},{"offset":83,"length":11,"type":"bold"},{"offset":104,"length":16,"type":"bold"},{"offset":130,"length":10,"type":"bold"}]}}'"
+2024-06-05 15:39:01 | DEB | Starting new HTTPS connection (1): api.bybit.com:443
+2024-06-05 15:39:02 | DEB | https://api.bybit.com:443 "GET /v2/public/tickers?symbol=BTCUSDT HTTP/1.1" 200 754
+2024-06-05 15:39:02 | DEB | Starting new HTTPS connection (1): api.bybit.com:443
+2024-06-05 15:39:02 | DEB | https://api.bybit.com:443 "GET /v2/public/tickers?symbol=ETHUSDT HTTP/1.1" 200 744
+2024-06-05 15:39:03 | DEB | Starting new HTTPS connection (1): api.bybit.com:443
+2024-06-05 15:39:04 | DEB | https://api.bybit.com:443 "GET /v2/public/tickers?symbol=BNBUSDT HTTP/1.1" 200 739
+2024-06-05 15:39:04 | DEB | Starting new HTTPS connection (1): api.bybit.com:443
+2024-06-05 15:39:04 | DEB | https://api.bybit.com:443 "GET /v2/public/tickers?symbol=SOLUSDT HTTP/1.1" 200 752
+2024-06-05 15:39:04 | DEB | Starting new HTTPS connection (1): api.bybit.com:443
+2024-06-05 15:39:05 | DEB | https://api.bybit.com:443 "GET /v2/public/tickers?symbol=TONUSDT HTTP/1.1" 200 745
+2024-06-05 15:39:05 | DEB | Making request. Method: eth_gasPrice
+2024-06-05 15:39:05 | DEB | Making request HTTP. URI: https://rpc.ankr.com/eth, Method: eth_gasPrice
+2024-06-05 15:39:05 | DEB | https://rpc.ankr.com:443 "POST /eth HTTP/1.1" 200 47
+2024-06-05 15:39:05 | DEB | Getting response HTTP. URI: https://rpc.ankr.com/eth, Method: eth_gasPrice, Response: {'jsonrpc': '2.0', 'id': 0, 'result': '0x48d3a57c4'}
+2024-06-05 15:39:05 | DEB | Starting new HTTPS connection (1): api.bybit.com:443
+2024-06-05 15:39:05 | DEB | https://api.bybit.com:443 "GET /v2/public/tickers?symbol=BTCUSDT HTTP/1.1" 200 754
+2024-06-05 15:39:05 | DEB | Starting new HTTPS connection (1): api.bybit.com:443
+2024-06-05 15:39:06 | DEB | https://api.bybit.com:443 "GET /v2/public/tickers?symbol=ETHUSDT HTTP/1.1" 200 744
+2024-06-05 15:39:06 | DEB | Starting new HTTPS connection (1): api.bybit.com:443
+2024-06-05 15:39:06 | DEB | https://api.bybit.com:443 "GET /v2/public/tickers?symbol=BNBUSDT HTTP/1.1" 200 739
+2024-06-05 15:39:06 | DEB | Starting new HTTPS connection (1): api.bybit.com:443
+2024-06-05 15:39:07 | DEB | https://api.bybit.com:443 "GET /v2/public/tickers?symbol=SOLUSDT HTTP/1.1" 200 752
+2024-06-05 15:39:07 | DEB | Starting new HTTPS connection (1): api.bybit.com:443
+2024-06-05 15:39:07 | DEB | https://api.bybit.com:443 "GET /v2/public/tickers?symbol=TONUSDT HTTP/1.1" 200 745
+2024-06-05 15:39:07 | DEB | Making request. Method: eth_gasPrice
+2024-06-05 15:39:07 | DEB | Making request HTTP. URI: https://rpc.ankr.com/eth, Method: eth_gasPrice
+2024-06-05 15:39:08 | DEB | https://rpc.ankr.com:443 "POST /eth HTTP/1.1" 200 47
+2024-06-05 15:39:08 | DEB | Getting response HTTP. URI: https://rpc.ankr.com/eth, Method: eth_gasPrice, Response: {'jsonrpc': '2.0', 'id': 0, 'result': '0x48d3a57c4'}
+2024-06-05 15:39:08 | DEB | Make request: "sendMessage" with data: "{'chat_id': '868320310', 'text': '*\U0001f7e9 ETH: 19.55 GWEI*\n\n*BTC:* $70794.6\n*ETH:* $3808.6\n*BNB:* $700.2\n*SOL:* $172.3\n*TON:* $7.25\n\n*Market Cap:* 1 trln $\n*Volume for 24 h:* 2 mlrd $\n*Dominance:* BTC 3% ETH 4%', 'parse_mode': 'markdown'}" and files "None"
+2024-06-05 15:39:08 | DEB | Make request: "sendMessage" with data: "{'chat_id': '5205226194', 'text': '*\U0001f7e9 ETH: 19.55 GWEI*\n\n*BTC:* $70796.5\n*ETH:* $3808.6\n*BNB:* $700.4\n*SOL:* $172.4\n*TON:* $7.25\n\n*Капитализация:* 1 трлн $\n*Объем за 24 ч:* 2 млрд $\n*Доминирование:* BTC 3% ETH 4%', 'parse_mode': 'markdown'}" and files "None"
+2024-06-05 15:39:08 | DEB | Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":1982,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717591148,"text":"\\ud83d\\udfe9 ETH: 19.55 GWEI\\n\\nBTC: $70794.6\\nETH: $3808.6\\nBNB: $700.2\\nSOL: $172.3\\nTON: $7.25\\n\\nMarket Cap: 1 trln $\\nVolume for 24 h: 2 mlrd $\\nDominance: BTC 3% ETH 4%","entities":[{"offset":0,"length":18,"type":"bold"},{"offset":20,"length":4,"type":"bold"},{"offset":34,"length":4,"type":"bold"},{"offset":47,"length":4,"type":"bold"},{"offset":59,"length":4,"type":"bold"},{"offset":71,"length":4,"type":"bold"},{"offset":83,"length":11,"type":"bold"},{"offset":104,"length":16,"type":"bold"},{"offset":130,"length":10,"type":"bold"}]}}'"
+2024-06-05 15:39:08 | DEB | Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":1983,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":5205226194,"first_name":"\\u0415\\u0433\\u043e\\u0440","username":"bahmutovv","type":"private"},"date":1717591148,"text":"\\ud83d\\udfe9 ETH: 19.55 GWEI\\n\\nBTC: $70796.5\\nETH: $3808.6\\nBNB: $700.4\\nSOL: $172.4\\nTON: $7.25\\n\\n\\u041a\\u0430\\u043f\\u0438\\u0442\\u0430\\u043b\\u0438\\u0437\\u0430\\u0446\\u0438\\u044f: 1 \\u0442\\u0440\\u043b\\u043d $\\n\\u041e\\u0431\\u044a\\u0435\\u043c \\u0437\\u0430 24 \\u0447: 2 \\u043c\\u043b\\u0440\\u0434 $\\n\\u0414\\u043e\\u043c\\u0438\\u043d\\u0438\\u0440\\u043e\\u0432\\u0430\\u043d\\u0438\\u0435: BTC 3% ETH 4%","entities":[{"offset":0,"length":18,"type":"bold"},{"offset":20,"length":4,"type":"bold"},{"offset":34,"length":4,"type":"bold"},{"offset":47,"length":4,"type":"bold"},{"offset":59,"length":4,"type":"bold"},{"offset":71,"length":4,"type":"bold"},{"offset":83,"length":14,"type":"bold"},{"offset":107,"length":14,"type":"bold"},{"offset":131,"length":14,"type":"bold"}]}}'"
+2024-06-05 15:39:57 | ERR | Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000028DD526D840>

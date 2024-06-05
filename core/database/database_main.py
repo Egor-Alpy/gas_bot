@@ -6,7 +6,7 @@ from core.database.tables.table_channels import DataBaseChannels
 
 FILENAME_DATABASE = "data/database/database.db"
 
-connection = sq.connect(FILENAME_DATABASE)
+connection = sq.connect(database=FILENAME_DATABASE, check_same_thread=False)
 cursor = connection.cursor()
 
 table_users = DataBaseUsers(connection, cursor)

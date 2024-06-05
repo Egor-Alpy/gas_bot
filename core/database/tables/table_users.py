@@ -28,6 +28,15 @@ class DataBaseUsers(DataBase):
             f"INSERT INTO users({KeyUsers.user_id}, {KeyUsers.username}, {KeyUsers.name}, {KeyUsers.surname}) VALUES({user_id}, '{username}', '{name}', '{surname}')")
         self.database.commit()
 
+    def get_user_id_by_time(self, time):
+        self.cursor.execute(f"SELECT {KeyUsers.user_id} FROM users WHERE {time} % interval < 30")
+        rows_tuples = self.cursor.fetchall()
+        rows = []
+        for i in range(len(rows_tuples)):
+            rows.append(rows_tuples[i][0])
+        print(rows)
+        return rows
+
     def get_all_user_id(self):
         self.cursor.execute(f"SELECT {KeyUsers.user_id} FROM users")
         rows_tuples = self.cursor.fetchall()

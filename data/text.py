@@ -1,7 +1,5 @@
-from web3 import Web3
-from core.logger_config import logger, PROJECT_NAME
-import requests
-
+from core.logger_config import PROJECT_NAME
+from core.client_web3.client import Client
 from core.database.database_main import table_channels
 
 CMD_START = 'start'
@@ -164,12 +162,20 @@ def get_msg_channels_to_subscribe(LAN):
     return msg
 
 
-def get_msg_gas_price(LAN):
-    prices = get_price()
-    market_data = get_coin_gecko_data()
+last_tickers_prices = {"BTCUSDT": '', "ETHUSDT": '', 'BNBUSDT': '', 'SOLUSDT': '', "TONUSDT": ''}
 
-    con_web3 = Web3(provider=Web3.HTTPProvider(endpoint_uri='https://rpc.ankr.com/eth'))
-    gas = round(con_web3.eth.gas_price / 10 ** 9, 2)
+
+def get_msg_gas_price(LAN):
+    global last_tickers_prices
+    prices = Client.get_tickers_prices(last_tickers_prices)
+    last_tickers_prices = prices
+    # market_data = Client.get_coin_gecko_data()
+    gas = Client.get_gas_price()
+    market_data = {}
+    market_data["market_cap_usd"] = '1'
+    market_data["volume_24h_usd"] = '2'
+    market_data["dominance_btc_percentage"] = '3'
+    market_data["dominance_eth_percentage"] = '4'
     if gas < 20:
         indicator = '🟩'
     elif 20 <= gas < 40:
@@ -206,47 +212,6 @@ def get_msg_gas_price(LAN):
             f'\n*Dominance:* BTC {market_data["dominance_btc_percentage"]}%'
             f' ETH {market_data["dominance_eth_percentage"]}%')
     return msg
-
-
-def get_price():
-    tickers_prices = {"BTCUSDT": '', "ETHUSDT": '', 'BNBUSDT': '', 'SOLUSDT': '', "TONUSDT": ''}
-    for symbol in tickers_prices:
-        url = f"https://api.bybit.com/v2/public/tickers?symbol={symbol}"
-        try:
-            response = requests.get(url)
-            data = response.json()
-
-            if 'result' in data and len(data['result']) > 0:
-                tickers_prices[f"{symbol}"] = round(float(data['result'][0]['last_price']), 1)
-            else:
-                return None
-        except Exception as e:
-            logger.info(f"{e} - Error in getting cryptocurrency [{symbol}] prices!")
-
-    return tickers_prices
-
-
-from pycoingecko import CoinGeckoAPI
-
-
-def get_coin_gecko_data():
-    try:
-        cg = CoinGeckoAPI()
-        data = cg.get_global()
-
-        market_cap = data['total_market_cap']['usd']
-        volume_24h = data['total_volume']['usd']
-        dominance_btc = data['market_cap_percentage']['btc']
-        dominance_eth = data['market_cap_percentage']['eth']
-    except Exception as e:
-        logger.info(f"{e} - Error in getting market info!")
-
-    return {
-        'market_cap_usd': '%.3f' % (market_cap / 10 ** 12),
-        'volume_24h_usd': '%.3f' % (volume_24h / 10 ** 9),
-        'dominance_btc_percentage': '%.1f' % dominance_btc,
-        'dominance_eth_percentage': '%.1f' % dominance_eth
-    }
 
 
 # ADMING MSG

@@ -1,0 +1,1033 @@
+2024-06-05 15:40:03 | DEB | Consider installing rusty-rlp to improve pyrlp performance with a rust basedbackend. Not currently functional for Python 3.11
+2024-06-05 15:40:03 | INF | Database: table 'users' has been connected!
+2024-06-05 15:40:03 | INF | Database: table 'channels' has been connected!
+2024-06-05 15:40:03 | INF | Thread: Sending process has been started!
+2024-06-05 15:40:03 | DEB | Using proactor: IocpProactor
+2024-06-05 15:40:03 | DEB | Make request: "getMe" with data: "{}" and files "None"
+2024-06-05 15:40:04 | DEB | Response for getMe: [200] "'{"ok":true,"result":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot","can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":false,"can_connect_to_business":false}}'"
+2024-06-05 15:40:04 | INF | Bot: ETH Gas Monitoring Bot [@tokito_gasbot]
+2024-06-05 15:40:04 | DEB | Make request: "getWebhookInfo" with data: "{}" and files "None"
+2024-06-05 15:40:04 | DEB | Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
+2024-06-05 15:40:04 | DEB | Make request: "deleteWebhook" with data: "{'drop_pending_updates': True}" and files "None"
+2024-06-05 15:40:04 | DEB | Response for deleteWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook is already deleted"}'"
+2024-06-05 15:40:04 | WAR | Updates were skipped successfully.
+2024-06-05 15:40:04 | DEB | Make request: "setMyCommands" with data: "{'commands': '[{"command": "/menu", "description": "настройки"}, {"command": "/help", "description": "поддержка"}]'}" and files "None"
+2024-06-05 15:40:04 | DEB | Response for setMyCommands: [200] "'{"ok":true,"result":true}'"
+2024-06-05 15:40:04 | DEB | ETH Gas Monitoring Bot has been started!
+2024-06-05 15:40:04 | INF | Start polling.
+2024-06-05 15:40:04 | DEB | Make request: "getWebhookInfo" with data: "{}" and files "None"
+2024-06-05 15:40:04 | DEB | Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
+2024-06-05 15:40:04 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-05 15:40:24 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:40:25 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-05 15:40:45 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:40:45 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-05 15:41:05 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:41:05 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-05 15:41:25 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:41:25 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-05 15:41:46 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:41:46 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-05 15:42:06 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:42:06 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-05 15:42:16 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722902965,\n"message":{"message_id":1988,"from":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"ru","is_premium":true},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717591336,"text":"/menu","entities":[{"offset":0,"length":5,"type":"bot_command"}]}}]}'"
+2024-06-05 15:42:16 | DEB | Received 1 updates.
+2024-06-05 15:42:16 | DEB | Make request: "sendMessage" with data: "{'chat_id': 868320310, 'text': '*Hello, this is the ETH Gas Monitoring Bot menu!*\n\nThis is where you can customize the bot.', 'parse_mode': 'markdown', 'reply_markup': '{"inline_keyboard": [[{"text": "Intervals", "callback_data": "set_interval"}], [{"text": "Language", "callback_data": "set_language"}, {"text": "Turn off", "callback_data": "turn_on_off"}]]}'}" and files "None"
+2024-06-05 15:42:16 | DEB | Make request: "getUpdates" with data: "{'offset': 722902966, 'timeout': 20}" and files "None"
+2024-06-05 15:42:16 | DEB | Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":1989,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717591336,"text":"Hello, this is the ETH Gas Monitoring Bot menu!\\n\\nThis is where you can customize the bot.","entities":[{"offset":0,"length":47,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"Intervals","callback_data":"set_interval"}],[{"text":"Language","callback_data":"set_language"},{"text":"Turn off","callback_data":"turn_on_off"}]]}}}'"
+2024-06-05 15:42:17 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722902966,\n"callback_query":{"id":"3729407337917634257","from":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"ru","is_premium":true},"message":{"message_id":1989,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717591336,"text":"Hello, this is the ETH Gas Monitoring Bot menu!\\n\\nThis is where you can customize the bot.","entities":[{"offset":0,"length":47,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"Intervals","callback_data":"set_interval"}],[{"text":"Language","callback_data":"set_language"},{"text":"Turn off","callback_data":"turn_on_off"}]]}},"chat_instance":"4318687453770464992","data":"set_interval"}}]}'"
+2024-06-05 15:42:17 | DEB | Received 1 updates.
+2024-06-05 15:42:17 | DEB | Make request: "answerCallbackQuery" with data: "{'callback_query_id': '3729407337917634257'}" and files "None"
+2024-06-05 15:42:17 | DEB | Make request: "getUpdates" with data: "{'offset': 722902967, 'timeout': 20}" and files "None"
+2024-06-05 15:42:17 | DEB | Response for answerCallbackQuery: [200] "'{"ok":true,"result":true}'"
+2024-06-05 15:42:17 | DEB | Make request: "editMessageText" with data: "{'text': '*Select the interval at which you will receive information about the gas price in the network:*', 'chat_id': 868320310, 'message_id': 1989, 'parse_mode': 'markdown', 'reply_markup': '{"inline_keyboard": [[{"text": "30 sec", "callback_data": "interval_30"}, {"text": "»»»    1 min    «««", "callback_data": "interval_60"}], [{"text": "3 min", "callback_data": "interval_180"}, {"text": "5 min", "callback_data": "interval_300"}], [{"text": "15 min", "callback_data": "interval_900"}, {"text": "30 min", "callback_data": "interval_1800"}], [{"text": "1 h", "callback_data": "interval_3600"}, {"text": "4 h", "callback_data": "interval_14400"}], [{"text": "12 h", "callback_data": "interval_43200"}, {"text": "24 h", "callback_data": "interval_86400"}], [{"text": "« Back", "callback_data": "back_to_settings"}]]}'}" and files "None"
+2024-06-05 15:42:18 | DEB | Response for editMessageText: [200] "'{"ok":true,"result":{"message_id":1989,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717591336,"edit_date":1717591338,"text":"Select the interval at which you will receive information about the gas price in the network:","entities":[{"offset":0,"length":93,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"30 sec","callback_data":"interval_30"},{"text":"\\u00bb\\u00bb\\u00bb    1 min    \\u00ab\\u00ab\\u00ab","callback_data":"interval_60"}],[{"text":"3 min","callback_data":"interval_180"},{"text":"5 min","callback_data":"interval_300"}],[{"text":"15 min","callback_data":"interval_900"},{"text":"30 min","callback_data":"interval_1800"}],[{"text":"1 h","callback_data":"interval_3600"},{"text":"4 h","callback_data":"interval_14400"}],[{"text":"12 h","callback_data":"interval_43200"},{"text":"24 h","callback_data":"interval_86400"}],[{"text":"\\u00ab Back","callback_data":"back_to_settings"}]]}}}'"
+2024-06-05 15:42:19 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722902967,\n"callback_query":{"id":"3729407338177459675","from":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"ru","is_premium":true},"message":{"message_id":1989,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717591336,"edit_date":1717591338,"text":"Select the interval at which you will receive information about the gas price in the network:","entities":[{"offset":0,"length":93,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"30 sec","callback_data":"interval_30"},{"text":"\\u00bb\\u00bb\\u00bb    1 min    \\u00ab\\u00ab\\u00ab","callback_data":"interval_60"}],[{"text":"3 min","callback_data":"interval_180"},{"text":"5 min","callback_data":"interval_300"}],[{"text":"15 min","callback_data":"interval_900"},{"text":"30 min","callback_data":"interval_1800"}],[{"text":"1 h","callback_data":"interval_3600"},{"text":"4 h","callback_data":"interval_14400"}],[{"text":"12 h","callback_data":"interval_43200"},{"text":"24 h","callback_data":"interval_86400"}],[{"text":"\\u00ab Back","callback_data":"back_to_settings"}]]}},"chat_instance":"4318687453770464992","data":"interval_30"}}]}'"
+2024-06-05 15:42:19 | DEB | Received 1 updates.
+2024-06-05 15:42:19 | DEB | Make request: "editMessageReplyMarkup" with data: "{'chat_id': 868320310, 'message_id': 1989, 'reply_markup': '{"inline_keyboard": [[{"text": "»»»    30 sec    «««", "callback_data": "interval_30"}, {"text": "1 min", "callback_data": "interval_60"}], [{"text": "3 min", "callback_data": "interval_180"}, {"text": "5 min", "callback_data": "interval_300"}], [{"text": "15 min", "callback_data": "interval_900"}, {"text": "30 min", "callback_data": "interval_1800"}], [{"text": "1 h", "callback_data": "interval_3600"}, {"text": "4 h", "callback_data": "interval_14400"}], [{"text": "12 h", "callback_data": "interval_43200"}, {"text": "24 h", "callback_data": "interval_86400"}], [{"text": "« Back", "callback_data": "back_to_settings"}]]}'}" and files "None"
+2024-06-05 15:42:19 | DEB | Make request: "getUpdates" with data: "{'offset': 722902968, 'timeout': 20}" and files "None"
+2024-06-05 15:42:19 | DEB | Response for editMessageReplyMarkup: [200] "'{"ok":true,"result":{"message_id":1989,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717591336,"edit_date":1717591340,"text":"Select the interval at which you will receive information about the gas price in the network:","entities":[{"offset":0,"length":93,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u00bb\\u00bb\\u00bb    30 sec    \\u00ab\\u00ab\\u00ab","callback_data":"interval_30"},{"text":"1 min","callback_data":"interval_60"}],[{"text":"3 min","callback_data":"interval_180"},{"text":"5 min","callback_data":"interval_300"}],[{"text":"15 min","callback_data":"interval_900"},{"text":"30 min","callback_data":"interval_1800"}],[{"text":"1 h","callback_data":"interval_3600"},{"text":"4 h","callback_data":"interval_14400"}],[{"text":"12 h","callback_data":"interval_43200"},{"text":"24 h","callback_data":"interval_86400"}],[{"text":"\\u00ab Back","callback_data":"back_to_settings"}]]}}}'"
+2024-06-05 15:42:19 | DEB | Make request: "answerCallbackQuery" with data: "{'callback_query_id': '3729407338177459675'}" and files "None"
+2024-06-05 15:42:19 | DEB | Response for answerCallbackQuery: [200] "'{"ok":true,"result":true}'"
+2024-06-05 15:42:20 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722902968,\n"callback_query":{"id":"3729407337760907216","from":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"ru","is_premium":true},"message":{"message_id":1989,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717591336,"edit_date":1717591340,"text":"Select the interval at which you will receive information about the gas price in the network:","entities":[{"offset":0,"length":93,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u00bb\\u00bb\\u00bb    30 sec    \\u00ab\\u00ab\\u00ab","callback_data":"interval_30"},{"text":"1 min","callback_data":"interval_60"}],[{"text":"3 min","callback_data":"interval_180"},{"text":"5 min","callback_data":"interval_300"}],[{"text":"15 min","callback_data":"interval_900"},{"text":"30 min","callback_data":"interval_1800"}],[{"text":"1 h","callback_data":"interval_3600"},{"text":"4 h","callback_data":"interval_14400"}],[{"text":"12 h","callback_data":"interval_43200"},{"text":"24 h","callback_data":"interval_86400"}],[{"text":"\\u00ab Back","callback_data":"back_to_settings"}]]}},"chat_instance":"4318687453770464992","data":"back_to_settings"}}]}'"
+2024-06-05 15:42:20 | DEB | Received 1 updates.
+2024-06-05 15:42:20 | DEB | Make request: "editMessageText" with data: "{'text': '*Hello, this is the ETH Gas Monitoring Bot menu!*\n\nThis is where you can customize the bot.', 'chat_id': 868320310, 'message_id': 1989, 'parse_mode': 'markdown', 'reply_markup': '{"inline_keyboard": [[{"text": "Intervals", "callback_data": "set_interval"}], [{"text": "Language", "callback_data": "set_language"}, {"text": "Turn off", "callback_data": "turn_on_off"}]]}'}" and files "None"
+2024-06-05 15:42:20 | DEB | Make request: "getUpdates" with data: "{'offset': 722902969, 'timeout': 20}" and files "None"
+2024-06-05 15:42:20 | DEB | Response for editMessageText: [200] "'{"ok":true,"result":{"message_id":1989,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717591336,"edit_date":1717591341,"text":"Hello, this is the ETH Gas Monitoring Bot menu!\\n\\nThis is where you can customize the bot.","entities":[{"offset":0,"length":47,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"Intervals","callback_data":"set_interval"}],[{"text":"Language","callback_data":"set_language"},{"text":"Turn off","callback_data":"turn_on_off"}]]}}}'"
+2024-06-05 15:42:23 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722902969,\n"callback_query":{"id":"3729407335117506380","from":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"ru","is_premium":true},"message":{"message_id":1989,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717591336,"edit_date":1717591341,"text":"Hello, this is the ETH Gas Monitoring Bot menu!\\n\\nThis is where you can customize the bot.","entities":[{"offset":0,"length":47,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"Intervals","callback_data":"set_interval"}],[{"text":"Language","callback_data":"set_language"},{"text":"Turn off","callback_data":"turn_on_off"}]]}},"chat_instance":"4318687453770464992","data":"set_language"}}]}'"
+2024-06-05 15:42:23 | DEB | Received 1 updates.
+2024-06-05 15:42:23 | DEB | Make request: "editMessageText" with data: "{'text': '*Choose the language:*', 'chat_id': 868320310, 'message_id': 1989, 'parse_mode': 'markdown', 'reply_markup': '{"inline_keyboard": [[{"text": "Русский", "callback_data": "language_RUS"}], [{"text": "»»»    English    «««", "callback_data": "language_ENG"}], [{"text": "« Back", "callback_data": "back_to_settings"}]]}'}" and files "None"
+2024-06-05 15:42:23 | DEB | Make request: "getUpdates" with data: "{'offset': 722902970, 'timeout': 20}" and files "None"
+2024-06-05 15:42:23 | DEB | Response for editMessageText: [200] "'{"ok":true,"result":{"message_id":1989,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717591336,"edit_date":1717591343,"text":"Choose the language:","entities":[{"offset":0,"length":20,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u0420\\u0443\\u0441\\u0441\\u043a\\u0438\\u0439","callback_data":"language_RUS"}],[{"text":"\\u00bb\\u00bb\\u00bb    English    \\u00ab\\u00ab\\u00ab","callback_data":"language_ENG"}],[{"text":"\\u00ab Back","callback_data":"back_to_settings"}]]}}}'"
+2024-06-05 15:42:24 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722902970,\n"callback_query":{"id":"3729407336206728433","from":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"ru","is_premium":true},"message":{"message_id":1989,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717591336,"edit_date":1717591343,"text":"Choose the language:","entities":[{"offset":0,"length":20,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u0420\\u0443\\u0441\\u0441\\u043a\\u0438\\u0439","callback_data":"language_RUS"}],[{"text":"\\u00bb\\u00bb\\u00bb    English    \\u00ab\\u00ab\\u00ab","callback_data":"language_ENG"}],[{"text":"\\u00ab Back","callback_data":"back_to_settings"}]]}},"chat_instance":"4318687453770464992","data":"language_RUS"}}]}'"
+2024-06-05 15:42:24 | DEB | Received 1 updates.
+2024-06-05 15:42:24 | DEB | Make request: "editMessageText" with data: "{'text': '*Выберите язык:*', 'chat_id': 868320310, 'message_id': 1989, 'parse_mode': 'markdown', 'reply_markup': '{"inline_keyboard": [[{"text": "»»»    Русский    «««", "callback_data": "language_RUS"}], [{"text": "English", "callback_data": "language_ENG"}], [{"text": "« Назад", "callback_data": "back_to_settings"}]]}'}" and files "None"
+2024-06-05 15:42:24 | DEB | Make request: "getUpdates" with data: "{'offset': 722902971, 'timeout': 20}" and files "None"
+2024-06-05 15:42:24 | DEB | Response for editMessageText: [200] "'{"ok":true,"result":{"message_id":1989,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717591336,"edit_date":1717591344,"text":"\\u0412\\u044b\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u044f\\u0437\\u044b\\u043a:","entities":[{"offset":0,"length":14,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u00bb\\u00bb\\u00bb    \\u0420\\u0443\\u0441\\u0441\\u043a\\u0438\\u0439    \\u00ab\\u00ab\\u00ab","callback_data":"language_RUS"}],[{"text":"English","callback_data":"language_ENG"}],[{"text":"\\u00ab \\u041d\\u0430\\u0437\\u0430\\u0434","callback_data":"back_to_settings"}]]}}}'"
+2024-06-05 15:42:24 | DEB | Make request: "answerCallbackQuery" with data: "{'callback_query_id': '3729407336206728433'}" and files "None"
+2024-06-05 15:42:24 | DEB | Response for answerCallbackQuery: [200] "'{"ok":true,"result":true}'"
+2024-06-05 15:42:25 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722902971,\n"callback_query":{"id":"3729407334250886084","from":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"ru","is_premium":true},"message":{"message_id":1989,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717591336,"edit_date":1717591344,"text":"\\u0412\\u044b\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u044f\\u0437\\u044b\\u043a:","entities":[{"offset":0,"length":14,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u00bb\\u00bb\\u00bb    \\u0420\\u0443\\u0441\\u0441\\u043a\\u0438\\u0439    \\u00ab\\u00ab\\u00ab","callback_data":"language_RUS"}],[{"text":"English","callback_data":"language_ENG"}],[{"text":"\\u00ab \\u041d\\u0430\\u0437\\u0430\\u0434","callback_data":"back_to_settings"}]]}},"chat_instance":"4318687453770464992","data":"back_to_settings"}}]}'"
+2024-06-05 15:42:25 | DEB | Received 1 updates.
+2024-06-05 15:42:25 | DEB | Make request: "editMessageText" with data: "{'text': '*Привет, это меню ETH Gas Monitoring Bot!*\n\nЗдесь Вы можете регулировать работу бота.', 'chat_id': 868320310, 'message_id': 1989, 'parse_mode': 'markdown', 'reply_markup': '{"inline_keyboard": [[{"text": "Интервалы", "callback_data": "set_interval"}], [{"text": "Язык", "callback_data": "set_language"}, {"text": "Выключить", "callback_data": "turn_on_off"}]]}'}" and files "None"
+2024-06-05 15:42:25 | DEB | Make request: "getUpdates" with data: "{'offset': 722902972, 'timeout': 20}" and files "None"
+2024-06-05 15:42:25 | DEB | Response for editMessageText: [200] "'{"ok":true,"result":{"message_id":1989,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717591336,"edit_date":1717591345,"text":"\\u041f\\u0440\\u0438\\u0432\\u0435\\u0442, \\u044d\\u0442\\u043e \\u043c\\u0435\\u043d\\u044e ETH Gas Monitoring Bot!\\n\\n\\u0417\\u0434\\u0435\\u0441\\u044c \\u0412\\u044b \\u043c\\u043e\\u0436\\u0435\\u0442\\u0435 \\u0440\\u0435\\u0433\\u0443\\u043b\\u0438\\u0440\\u043e\\u0432\\u0430\\u0442\\u044c \\u0440\\u0430\\u0431\\u043e\\u0442\\u0443 \\u0431\\u043e\\u0442\\u0430.","entities":[{"offset":0,"length":40,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u0418\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b\\u044b","callback_data":"set_interval"}],[{"text":"\\u042f\\u0437\\u044b\\u043a","callback_data":"set_language"},{"text":"\\u0412\\u044b\\u043a\\u043b\\u044e\\u0447\\u0438\\u0442\\u044c","callback_data":"turn_on_off"}]]}}}'"
+2024-06-05 15:42:25 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722902972,\n"callback_query":{"id":"3729407335750701380","from":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"ru","is_premium":true},"message":{"message_id":1989,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717591336,"edit_date":1717591345,"text":"\\u041f\\u0440\\u0438\\u0432\\u0435\\u0442, \\u044d\\u0442\\u043e \\u043c\\u0435\\u043d\\u044e ETH Gas Monitoring Bot!\\n\\n\\u0417\\u0434\\u0435\\u0441\\u044c \\u0412\\u044b \\u043c\\u043e\\u0436\\u0435\\u0442\\u0435 \\u0440\\u0435\\u0433\\u0443\\u043b\\u0438\\u0440\\u043e\\u0432\\u0430\\u0442\\u044c \\u0440\\u0430\\u0431\\u043e\\u0442\\u0443 \\u0431\\u043e\\u0442\\u0430.","entities":[{"offset":0,"length":40,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u0418\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b\\u044b","callback_data":"set_interval"}],[{"text":"\\u042f\\u0437\\u044b\\u043a","callback_data":"set_language"},{"text":"\\u0412\\u044b\\u043a\\u043b\\u044e\\u0447\\u0438\\u0442\\u044c","callback_data":"turn_on_off"}]]}},"chat_instance":"4318687453770464992","data":"set_interval"}}]}'"
+2024-06-05 15:42:25 | DEB | Received 1 updates.
+2024-06-05 15:42:25 | DEB | Make request: "answerCallbackQuery" with data: "{'callback_query_id': '3729407335750701380'}" and files "None"
+2024-06-05 15:42:25 | DEB | Response for answerCallbackQuery: [200] "'{"ok":true,"result":true}'"
+2024-06-05 15:42:25 | DEB | Make request: "editMessageText" with data: "{'text': '*Выберите интервал, с которым Вы будете получать информацию о цене газа в сети:*', 'chat_id': 868320310, 'message_id': 1989, 'parse_mode': 'markdown', 'reply_markup': '{"inline_keyboard": [[{"text": "»»»    30 сек    «««", "callback_data": "interval_30"}, {"text": "1 мин", "callback_data": "interval_60"}], [{"text": "3 мин", "callback_data": "interval_180"}, {"text": "5 мин", "callback_data": "interval_300"}], [{"text": "15 мин", "callback_data": "interval_900"}, {"text": "30 мин", "callback_data": "interval_1800"}], [{"text": "1 ч", "callback_data": "interval_3600"}, {"text": "4 ч", "callback_data": "interval_14400"}], [{"text": "12 ч", "callback_data": "interval_43200"}, {"text": "24 ч", "callback_data": "interval_86400"}], [{"text": "« Назад", "callback_data": "back_to_settings"}]]}'}" and files "None"
+2024-06-05 15:42:25 | DEB | Make request: "getUpdates" with data: "{'offset': 722902973, 'timeout': 20}" and files "None"
+2024-06-05 15:42:26 | DEB | Response for editMessageText: [200] "'{"ok":true,"result":{"message_id":1989,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717591336,"edit_date":1717591346,"text":"\\u0412\\u044b\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u0438\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b, \\u0441 \\u043a\\u043e\\u0442\\u043e\\u0440\\u044b\\u043c \\u0412\\u044b \\u0431\\u0443\\u0434\\u0435\\u0442\\u0435 \\u043f\\u043e\\u043b\\u0443\\u0447\\u0430\\u0442\\u044c \\u0438\\u043d\\u0444\\u043e\\u0440\\u043c\\u0430\\u0446\\u0438\\u044e \\u043e \\u0446\\u0435\\u043d\\u0435 \\u0433\\u0430\\u0437\\u0430 \\u0432 \\u0441\\u0435\\u0442\\u0438:","entities":[{"offset":0,"length":78,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u00bb\\u00bb\\u00bb    30 \\u0441\\u0435\\u043a    \\u00ab\\u00ab\\u00ab","callback_data":"interval_30"},{"text":"1 \\u043c\\u0438\\u043d","callback_data":"interval_60"}],[{"text":"3 \\u043c\\u0438\\u043d","callback_data":"interval_180"},{"text":"5 \\u043c\\u0438\\u043d","callback_data":"interval_300"}],[{"text":"15 \\u043c\\u0438\\u043d","callback_data":"interval_900"},{"text":"30 \\u043c\\u0438\\u043d","callback_data":"interval_1800"}],[{"text":"1 \\u0447","callback_data":"interval_3600"},{"text":"4 \\u0447","callback_data":"interval_14400"}],[{"text":"12 \\u0447","callback_data":"interval_43200"},{"text":"24 \\u0447","callback_data":"interval_86400"}],[{"text":"\\u00ab \\u041d\\u0430\\u0437\\u0430\\u0434","callback_data":"back_to_settings"}]]}}}'"
+2024-06-05 15:42:26 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722902973,\n"callback_query":{"id":"3729407336483045080","from":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"ru","is_premium":true},"message":{"message_id":1989,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717591336,"edit_date":1717591346,"text":"\\u0412\\u044b\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u0438\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b, \\u0441 \\u043a\\u043e\\u0442\\u043e\\u0440\\u044b\\u043c \\u0412\\u044b \\u0431\\u0443\\u0434\\u0435\\u0442\\u0435 \\u043f\\u043e\\u043b\\u0443\\u0447\\u0430\\u0442\\u044c \\u0438\\u043d\\u0444\\u043e\\u0440\\u043c\\u0430\\u0446\\u0438\\u044e \\u043e \\u0446\\u0435\\u043d\\u0435 \\u0433\\u0430\\u0437\\u0430 \\u0432 \\u0441\\u0435\\u0442\\u0438:","entities":[{"offset":0,"length":78,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u00bb\\u00bb\\u00bb    30 \\u0441\\u0435\\u043a    \\u00ab\\u00ab\\u00ab","callback_data":"interval_30"},{"text":"1 \\u043c\\u0438\\u043d","callback_data":"interval_60"}],[{"text":"3 \\u043c\\u0438\\u043d","callback_data":"interval_180"},{"text":"5 \\u043c\\u0438\\u043d","callback_data":"interval_300"}],[{"text":"15 \\u043c\\u0438\\u043d","callback_data":"interval_900"},{"text":"30 \\u043c\\u0438\\u043d","callback_data":"interval_1800"}],[{"text":"1 \\u0447","callback_data":"interval_3600"},{"text":"4 \\u0447","callback_data":"interval_14400"}],[{"text":"12 \\u0447","callback_data":"interval_43200"},{"text":"24 \\u0447","callback_data":"interval_86400"}],[{"text":"\\u00ab \\u041d\\u0430\\u0437\\u0430\\u0434","callback_data":"back_to_settings"}]]}},"chat_instance":"4318687453770464992","data":"back_to_settings"}}]}'"
+2024-06-05 15:42:26 | DEB | Received 1 updates.
+2024-06-05 15:42:26 | DEB | Make request: "editMessageText" with data: "{'text': '*Привет, это меню ETH Gas Monitoring Bot!*\n\nЗдесь Вы можете регулировать работу бота.', 'chat_id': 868320310, 'message_id': 1989, 'parse_mode': 'markdown', 'reply_markup': '{"inline_keyboard": [[{"text": "Интервалы", "callback_data": "set_interval"}], [{"text": "Язык", "callback_data": "set_language"}, {"text": "Выключить", "callback_data": "turn_on_off"}]]}'}" and files "None"
+2024-06-05 15:42:26 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:42:26 | DEB | Response for editMessageText: [200] "'{"ok":true,"result":{"message_id":1989,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717591336,"edit_date":1717591347,"text":"\\u041f\\u0440\\u0438\\u0432\\u0435\\u0442, \\u044d\\u0442\\u043e \\u043c\\u0435\\u043d\\u044e ETH Gas Monitoring Bot!\\n\\n\\u0417\\u0434\\u0435\\u0441\\u044c \\u0412\\u044b \\u043c\\u043e\\u0436\\u0435\\u0442\\u0435 \\u0440\\u0435\\u0433\\u0443\\u043b\\u0438\\u0440\\u043e\\u0432\\u0430\\u0442\\u044c \\u0440\\u0430\\u0431\\u043e\\u0442\\u0443 \\u0431\\u043e\\u0442\\u0430.","entities":[{"offset":0,"length":40,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u0418\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b\\u044b","callback_data":"set_interval"}],[{"text":"\\u042f\\u0437\\u044b\\u043a","callback_data":"set_language"},{"text":"\\u0412\\u044b\\u043a\\u043b\\u044e\\u0447\\u0438\\u0442\\u044c","callback_data":"turn_on_off"}]]}}}'"
+2024-06-05 15:42:47 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:42:47 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:43:07 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:43:07 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:43:27 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:43:27 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:43:47 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:43:47 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:44:08 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:44:08 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:44:28 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:44:28 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:44:48 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:44:48 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:45:08 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:45:09 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:45:29 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:45:29 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:45:49 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:45:49 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:46:09 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:46:09 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:46:29 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:46:30 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:46:50 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:46:50 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:47:10 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:47:10 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:47:30 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:47:30 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:47:51 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:47:51 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:48:11 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:48:11 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:48:31 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:48:31 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:48:51 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:48:52 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:49:12 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:49:12 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:49:32 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:49:32 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:49:52 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:49:52 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:50:13 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:50:13 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:51:19 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:51:19 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:51:39 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:51:39 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:51:59 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:52:00 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:52:20 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:52:20 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:52:40 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:52:40 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:53:00 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:53:00 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:53:21 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:53:21 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:53:41 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:53:41 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:54:01 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:54:01 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:54:22 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:54:22 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:54:42 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:54:42 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:55:02 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:55:02 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:55:22 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:55:23 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:55:43 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:55:43 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 15:56:03 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 15:56:03 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 16:05:21 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 586, in _request
+    await resp.start(conn)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client_reqrep.py", line 900, in start
+    with self._timer:
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\helpers.py", line 725, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
+2024-06-05 16:05:26 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 16:05:46 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:05:46 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 16:06:07 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:06:07 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 16:06:27 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:06:27 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 16:06:47 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:06:47 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 16:07:07 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:07:07 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 16:07:27 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:07:27 | DEB | Make request: "getUpdates" with data: "{'offset': 722902974, 'timeout': 20}" and files "None"
+2024-06-05 16:07:45 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722902974,\n"message":{"message_id":2025,"from":{"id":5205226194,"is_bot":false,"first_name":"\\u0415\\u0433\\u043e\\u0440","username":"bahmutovv","language_code":"ru"},"chat":{"id":5205226194,"first_name":"\\u0415\\u0433\\u043e\\u0440","username":"bahmutovv","type":"private"},"date":1717592865,"text":"/menu","entities":[{"offset":0,"length":5,"type":"bot_command"}]}}]}'"
+2024-06-05 16:07:45 | DEB | Received 1 updates.
+2024-06-05 16:07:45 | DEB | Make request: "sendMessage" with data: "{'chat_id': 5205226194, 'text': '*Привет, это меню ETH Gas Monitoring Bot!*\n\nЗдесь Вы можете регулировать работу бота.', 'parse_mode': 'markdown', 'reply_markup': '{"inline_keyboard": [[{"text": "Интервалы", "callback_data": "set_interval"}], [{"text": "Язык", "callback_data": "set_language"}, {"text": "Выключить", "callback_data": "turn_on_off"}]]}'}" and files "None"
+2024-06-05 16:07:45 | DEB | Make request: "getUpdates" with data: "{'offset': 722902975, 'timeout': 20}" and files "None"
+2024-06-05 16:07:45 | DEB | Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":2026,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":5205226194,"first_name":"\\u0415\\u0433\\u043e\\u0440","username":"bahmutovv","type":"private"},"date":1717592866,"text":"\\u041f\\u0440\\u0438\\u0432\\u0435\\u0442, \\u044d\\u0442\\u043e \\u043c\\u0435\\u043d\\u044e ETH Gas Monitoring Bot!\\n\\n\\u0417\\u0434\\u0435\\u0441\\u044c \\u0412\\u044b \\u043c\\u043e\\u0436\\u0435\\u0442\\u0435 \\u0440\\u0435\\u0433\\u0443\\u043b\\u0438\\u0440\\u043e\\u0432\\u0430\\u0442\\u044c \\u0440\\u0430\\u0431\\u043e\\u0442\\u0443 \\u0431\\u043e\\u0442\\u0430.","entities":[{"offset":0,"length":40,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u0418\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b\\u044b","callback_data":"set_interval"}],[{"text":"\\u042f\\u0437\\u044b\\u043a","callback_data":"set_language"},{"text":"\\u0412\\u044b\\u043a\\u043b\\u044e\\u0447\\u0438\\u0442\\u044c","callback_data":"turn_on_off"}]]}}}'"
+2024-06-05 16:07:48 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722902975,\n"callback_query":{"id":"3909532200936901512","from":{"id":5205226194,"is_bot":false,"first_name":"\\u0415\\u0433\\u043e\\u0440","username":"bahmutovv","language_code":"ru"},"message":{"message_id":2026,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":5205226194,"first_name":"\\u0415\\u0433\\u043e\\u0440","username":"bahmutovv","type":"private"},"date":1717592866,"text":"\\u041f\\u0440\\u0438\\u0432\\u0435\\u0442, \\u044d\\u0442\\u043e \\u043c\\u0435\\u043d\\u044e ETH Gas Monitoring Bot!\\n\\n\\u0417\\u0434\\u0435\\u0441\\u044c \\u0412\\u044b \\u043c\\u043e\\u0436\\u0435\\u0442\\u0435 \\u0440\\u0435\\u0433\\u0443\\u043b\\u0438\\u0440\\u043e\\u0432\\u0430\\u0442\\u044c \\u0440\\u0430\\u0431\\u043e\\u0442\\u0443 \\u0431\\u043e\\u0442\\u0430.","entities":[{"offset":0,"length":40,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u0418\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b\\u044b","callback_data":"set_interval"}],[{"text":"\\u042f\\u0437\\u044b\\u043a","callback_data":"set_language"},{"text":"\\u0412\\u044b\\u043a\\u043b\\u044e\\u0447\\u0438\\u0442\\u044c","callback_data":"turn_on_off"}]]}},"chat_instance":"3573490298114648320","data":"set_interval"}}]}'"
+2024-06-05 16:07:48 | DEB | Received 1 updates.
+2024-06-05 16:07:48 | DEB | Make request: "answerCallbackQuery" with data: "{'callback_query_id': '3909532200936901512'}" and files "None"
+2024-06-05 16:07:48 | DEB | Response for answerCallbackQuery: [200] "'{"ok":true,"result":true}'"
+2024-06-05 16:07:48 | DEB | Make request: "editMessageText" with data: "{'text': '*Выберите интервал, с которым Вы будете получать информацию о цене газа в сети:*', 'chat_id': 5205226194, 'message_id': 2026, 'parse_mode': 'markdown', 'reply_markup': '{"inline_keyboard": [[{"text": "30 сек", "callback_data": "interval_30"}, {"text": "1 мин", "callback_data": "interval_60"}], [{"text": "»»»    3 мин    «««", "callback_data": "interval_180"}, {"text": "5 мин", "callback_data": "interval_300"}], [{"text": "15 мин", "callback_data": "interval_900"}, {"text": "30 мин", "callback_data": "interval_1800"}], [{"text": "1 ч", "callback_data": "interval_3600"}, {"text": "4 ч", "callback_data": "interval_14400"}], [{"text": "12 ч", "callback_data": "interval_43200"}, {"text": "24 ч", "callback_data": "interval_86400"}], [{"text": "« Назад", "callback_data": "back_to_settings"}]]}'}" and files "None"
+2024-06-05 16:07:48 | DEB | Make request: "getUpdates" with data: "{'offset': 722902976, 'timeout': 20}" and files "None"
+2024-06-05 16:07:48 | DEB | Response for editMessageText: [200] "'{"ok":true,"result":{"message_id":2026,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":5205226194,"first_name":"\\u0415\\u0433\\u043e\\u0440","username":"bahmutovv","type":"private"},"date":1717592866,"edit_date":1717592868,"text":"\\u0412\\u044b\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u0438\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b, \\u0441 \\u043a\\u043e\\u0442\\u043e\\u0440\\u044b\\u043c \\u0412\\u044b \\u0431\\u0443\\u0434\\u0435\\u0442\\u0435 \\u043f\\u043e\\u043b\\u0443\\u0447\\u0430\\u0442\\u044c \\u0438\\u043d\\u0444\\u043e\\u0440\\u043c\\u0430\\u0446\\u0438\\u044e \\u043e \\u0446\\u0435\\u043d\\u0435 \\u0433\\u0430\\u0437\\u0430 \\u0432 \\u0441\\u0435\\u0442\\u0438:","entities":[{"offset":0,"length":78,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"30 \\u0441\\u0435\\u043a","callback_data":"interval_30"},{"text":"1 \\u043c\\u0438\\u043d","callback_data":"interval_60"}],[{"text":"\\u00bb\\u00bb\\u00bb    3 \\u043c\\u0438\\u043d    \\u00ab\\u00ab\\u00ab","callback_data":"interval_180"},{"text":"5 \\u043c\\u0438\\u043d","callback_data":"interval_300"}],[{"text":"15 \\u043c\\u0438\\u043d","callback_data":"interval_900"},{"text":"30 \\u043c\\u0438\\u043d","callback_data":"interval_1800"}],[{"text":"1 \\u0447","callback_data":"interval_3600"},{"text":"4 \\u0447","callback_data":"interval_14400"}],[{"text":"12 \\u0447","callback_data":"interval_43200"},{"text":"24 \\u0447","callback_data":"interval_86400"}],[{"text":"\\u00ab \\u041d\\u0430\\u0437\\u0430\\u0434","callback_data":"back_to_settings"}]]}}}'"
+2024-06-05 16:07:50 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722902976,\n"callback_query":{"id":"3909532198490746120","from":{"id":5205226194,"is_bot":false,"first_name":"\\u0415\\u0433\\u043e\\u0440","username":"bahmutovv","language_code":"ru"},"message":{"message_id":2026,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":5205226194,"first_name":"\\u0415\\u0433\\u043e\\u0440","username":"bahmutovv","type":"private"},"date":1717592866,"edit_date":1717592868,"text":"\\u0412\\u044b\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u0438\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b, \\u0441 \\u043a\\u043e\\u0442\\u043e\\u0440\\u044b\\u043c \\u0412\\u044b \\u0431\\u0443\\u0434\\u0435\\u0442\\u0435 \\u043f\\u043e\\u043b\\u0443\\u0447\\u0430\\u0442\\u044c \\u0438\\u043d\\u0444\\u043e\\u0440\\u043c\\u0430\\u0446\\u0438\\u044e \\u043e \\u0446\\u0435\\u043d\\u0435 \\u0433\\u0430\\u0437\\u0430 \\u0432 \\u0441\\u0435\\u0442\\u0438:","entities":[{"offset":0,"length":78,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"30 \\u0441\\u0435\\u043a","callback_data":"interval_30"},{"text":"1 \\u043c\\u0438\\u043d","callback_data":"interval_60"}],[{"text":"\\u00bb\\u00bb\\u00bb    3 \\u043c\\u0438\\u043d    \\u00ab\\u00ab\\u00ab","callback_data":"interval_180"},{"text":"5 \\u043c\\u0438\\u043d","callback_data":"interval_300"}],[{"text":"15 \\u043c\\u0438\\u043d","callback_data":"interval_900"},{"text":"30 \\u043c\\u0438\\u043d","callback_data":"interval_1800"}],[{"text":"1 \\u0447","callback_data":"interval_3600"},{"text":"4 \\u0447","callback_data":"interval_14400"}],[{"text":"12 \\u0447","callback_data":"interval_43200"},{"text":"24 \\u0447","callback_data":"interval_86400"}],[{"text":"\\u00ab \\u041d\\u0430\\u0437\\u0430\\u0434","callback_data":"back_to_settings"}]]}},"chat_instance":"3573490298114648320","data":"back_to_settings"}}]}'"
+2024-06-05 16:07:50 | DEB | Received 1 updates.
+2024-06-05 16:07:50 | DEB | Make request: "editMessageText" with data: "{'text': '*Привет, это меню ETH Gas Monitoring Bot!*\n\nЗдесь Вы можете регулировать работу бота.', 'chat_id': 5205226194, 'message_id': 2026, 'parse_mode': 'markdown', 'reply_markup': '{"inline_keyboard": [[{"text": "Интервалы", "callback_data": "set_interval"}], [{"text": "Язык", "callback_data": "set_language"}, {"text": "Выключить", "callback_data": "turn_on_off"}]]}'}" and files "None"
+2024-06-05 16:07:50 | DEB | Make request: "getUpdates" with data: "{'offset': 722902977, 'timeout': 20}" and files "None"
+2024-06-05 16:07:50 | DEB | Response for editMessageText: [200] "'{"ok":true,"result":{"message_id":2026,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":5205226194,"first_name":"\\u0415\\u0433\\u043e\\u0440","username":"bahmutovv","type":"private"},"date":1717592866,"edit_date":1717592870,"text":"\\u041f\\u0440\\u0438\\u0432\\u0435\\u0442, \\u044d\\u0442\\u043e \\u043c\\u0435\\u043d\\u044e ETH Gas Monitoring Bot!\\n\\n\\u0417\\u0434\\u0435\\u0441\\u044c \\u0412\\u044b \\u043c\\u043e\\u0436\\u0435\\u0442\\u0435 \\u0440\\u0435\\u0433\\u0443\\u043b\\u0438\\u0440\\u043e\\u0432\\u0430\\u0442\\u044c \\u0440\\u0430\\u0431\\u043e\\u0442\\u0443 \\u0431\\u043e\\u0442\\u0430.","entities":[{"offset":0,"length":40,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u0418\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b\\u044b","callback_data":"set_interval"}],[{"text":"\\u042f\\u0437\\u044b\\u043a","callback_data":"set_language"},{"text":"\\u0412\\u044b\\u043a\\u043b\\u044e\\u0447\\u0438\\u0442\\u044c","callback_data":"turn_on_off"}]]}}}'"
+2024-06-05 16:08:07 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722902977,\n"message":{"message_id":2028,"from":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"ru","is_premium":true},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717592887,"text":"/menu","entities":[{"offset":0,"length":5,"type":"bot_command"}]}}]}'"
+2024-06-05 16:08:07 | DEB | Received 1 updates.
+2024-06-05 16:08:07 | DEB | Make request: "sendMessage" with data: "{'chat_id': 868320310, 'text': '*Привет, это меню ETH Gas Monitoring Bot!*\n\nЗдесь Вы можете регулировать работу бота.', 'parse_mode': 'markdown', 'reply_markup': '{"inline_keyboard": [[{"text": "Интервалы", "callback_data": "set_interval"}], [{"text": "Язык", "callback_data": "set_language"}, {"text": "Выключить", "callback_data": "turn_on_off"}]]}'}" and files "None"
+2024-06-05 16:08:07 | DEB | Make request: "getUpdates" with data: "{'offset': 722902978, 'timeout': 20}" and files "None"
+2024-06-05 16:08:07 | DEB | Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":2029,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717592887,"text":"\\u041f\\u0440\\u0438\\u0432\\u0435\\u0442, \\u044d\\u0442\\u043e \\u043c\\u0435\\u043d\\u044e ETH Gas Monitoring Bot!\\n\\n\\u0417\\u0434\\u0435\\u0441\\u044c \\u0412\\u044b \\u043c\\u043e\\u0436\\u0435\\u0442\\u0435 \\u0440\\u0435\\u0433\\u0443\\u043b\\u0438\\u0440\\u043e\\u0432\\u0430\\u0442\\u044c \\u0440\\u0430\\u0431\\u043e\\u0442\\u0443 \\u0431\\u043e\\u0442\\u0430.","entities":[{"offset":0,"length":40,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u0418\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b\\u044b","callback_data":"set_interval"}],[{"text":"\\u042f\\u0437\\u044b\\u043a","callback_data":"set_language"},{"text":"\\u0412\\u044b\\u043a\\u043b\\u044e\\u0447\\u0438\\u0442\\u044c","callback_data":"turn_on_off"}]]}}}'"
+2024-06-05 16:08:08 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722902978,\n"callback_query":{"id":"3729407334498689289","from":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"ru","is_premium":true},"message":{"message_id":2029,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717592887,"text":"\\u041f\\u0440\\u0438\\u0432\\u0435\\u0442, \\u044d\\u0442\\u043e \\u043c\\u0435\\u043d\\u044e ETH Gas Monitoring Bot!\\n\\n\\u0417\\u0434\\u0435\\u0441\\u044c \\u0412\\u044b \\u043c\\u043e\\u0436\\u0435\\u0442\\u0435 \\u0440\\u0435\\u0433\\u0443\\u043b\\u0438\\u0440\\u043e\\u0432\\u0430\\u0442\\u044c \\u0440\\u0430\\u0431\\u043e\\u0442\\u0443 \\u0431\\u043e\\u0442\\u0430.","entities":[{"offset":0,"length":40,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u0418\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b\\u044b","callback_data":"set_interval"}],[{"text":"\\u042f\\u0437\\u044b\\u043a","callback_data":"set_language"},{"text":"\\u0412\\u044b\\u043a\\u043b\\u044e\\u0447\\u0438\\u0442\\u044c","callback_data":"turn_on_off"}]]}},"chat_instance":"4318687453770464992","data":"set_language"}}]}'"
+2024-06-05 16:08:08 | DEB | Received 1 updates.
+2024-06-05 16:08:08 | DEB | Make request: "editMessageText" with data: "{'text': '*Выберите язык:*', 'chat_id': 868320310, 'message_id': 2029, 'parse_mode': 'markdown', 'reply_markup': '{"inline_keyboard": [[{"text": "»»»    Русский    «««", "callback_data": "language_RUS"}], [{"text": "English", "callback_data": "language_ENG"}], [{"text": "« Назад", "callback_data": "back_to_settings"}]]}'}" and files "None"
+2024-06-05 16:08:08 | DEB | Make request: "getUpdates" with data: "{'offset': 722902979, 'timeout': 20}" and files "None"
+2024-06-05 16:08:08 | DEB | Response for editMessageText: [200] "'{"ok":true,"result":{"message_id":2029,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717592887,"edit_date":1717592888,"text":"\\u0412\\u044b\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u044f\\u0437\\u044b\\u043a:","entities":[{"offset":0,"length":14,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u00bb\\u00bb\\u00bb    \\u0420\\u0443\\u0441\\u0441\\u043a\\u0438\\u0439    \\u00ab\\u00ab\\u00ab","callback_data":"language_RUS"}],[{"text":"English","callback_data":"language_ENG"}],[{"text":"\\u00ab \\u041d\\u0430\\u0437\\u0430\\u0434","callback_data":"back_to_settings"}]]}}}'"
+2024-06-05 16:08:09 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722902979,\n"callback_query":{"id":"3729407334930637224","from":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"ru","is_premium":true},"message":{"message_id":2029,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717592887,"edit_date":1717592888,"text":"\\u0412\\u044b\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u044f\\u0437\\u044b\\u043a:","entities":[{"offset":0,"length":14,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u00bb\\u00bb\\u00bb    \\u0420\\u0443\\u0441\\u0441\\u043a\\u0438\\u0439    \\u00ab\\u00ab\\u00ab","callback_data":"language_RUS"}],[{"text":"English","callback_data":"language_ENG"}],[{"text":"\\u00ab \\u041d\\u0430\\u0437\\u0430\\u0434","callback_data":"back_to_settings"}]]}},"chat_instance":"4318687453770464992","data":"back_to_settings"}}]}'"
+2024-06-05 16:08:09 | DEB | Received 1 updates.
+2024-06-05 16:08:09 | DEB | Make request: "editMessageText" with data: "{'text': '*Привет, это меню ETH Gas Monitoring Bot!*\n\nЗдесь Вы можете регулировать работу бота.', 'chat_id': 868320310, 'message_id': 2029, 'parse_mode': 'markdown', 'reply_markup': '{"inline_keyboard": [[{"text": "Интервалы", "callback_data": "set_interval"}], [{"text": "Язык", "callback_data": "set_language"}, {"text": "Выключить", "callback_data": "turn_on_off"}]]}'}" and files "None"
+2024-06-05 16:08:09 | DEB | Make request: "getUpdates" with data: "{'offset': 722902980, 'timeout': 20}" and files "None"
+2024-06-05 16:08:09 | DEB | Response for editMessageText: [200] "'{"ok":true,"result":{"message_id":2029,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717592887,"edit_date":1717592889,"text":"\\u041f\\u0440\\u0438\\u0432\\u0435\\u0442, \\u044d\\u0442\\u043e \\u043c\\u0435\\u043d\\u044e ETH Gas Monitoring Bot!\\n\\n\\u0417\\u0434\\u0435\\u0441\\u044c \\u0412\\u044b \\u043c\\u043e\\u0436\\u0435\\u0442\\u0435 \\u0440\\u0435\\u0433\\u0443\\u043b\\u0438\\u0440\\u043e\\u0432\\u0430\\u0442\\u044c \\u0440\\u0430\\u0431\\u043e\\u0442\\u0443 \\u0431\\u043e\\u0442\\u0430.","entities":[{"offset":0,"length":40,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u0418\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b\\u044b","callback_data":"set_interval"}],[{"text":"\\u042f\\u0437\\u044b\\u043a","callback_data":"set_language"},{"text":"\\u0412\\u044b\\u043a\\u043b\\u044e\\u0447\\u0438\\u0442\\u044c","callback_data":"turn_on_off"}]]}}}'"
+2024-06-05 16:08:10 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722902980,\n"callback_query":{"id":"3729407336009472538","from":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"ru","is_premium":true},"message":{"message_id":2029,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717592887,"edit_date":1717592889,"text":"\\u041f\\u0440\\u0438\\u0432\\u0435\\u0442, \\u044d\\u0442\\u043e \\u043c\\u0435\\u043d\\u044e ETH Gas Monitoring Bot!\\n\\n\\u0417\\u0434\\u0435\\u0441\\u044c \\u0412\\u044b \\u043c\\u043e\\u0436\\u0435\\u0442\\u0435 \\u0440\\u0435\\u0433\\u0443\\u043b\\u0438\\u0440\\u043e\\u0432\\u0430\\u0442\\u044c \\u0440\\u0430\\u0431\\u043e\\u0442\\u0443 \\u0431\\u043e\\u0442\\u0430.","entities":[{"offset":0,"length":40,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u0418\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b\\u044b","callback_data":"set_interval"}],[{"text":"\\u042f\\u0437\\u044b\\u043a","callback_data":"set_language"},{"text":"\\u0412\\u044b\\u043a\\u043b\\u044e\\u0447\\u0438\\u0442\\u044c","callback_data":"turn_on_off"}]]}},"chat_instance":"4318687453770464992","data":"set_interval"}}]}'"
+2024-06-05 16:08:10 | DEB | Received 1 updates.
+2024-06-05 16:08:10 | DEB | Make request: "answerCallbackQuery" with data: "{'callback_query_id': '3729407336009472538'}" and files "None"
+2024-06-05 16:08:10 | DEB | Make request: "getUpdates" with data: "{'offset': 722902981, 'timeout': 20}" and files "None"
+2024-06-05 16:08:10 | DEB | Response for answerCallbackQuery: [200] "'{"ok":true,"result":true}'"
+2024-06-05 16:08:10 | DEB | Make request: "editMessageText" with data: "{'text': '*Выберите интервал, с которым Вы будете получать информацию о цене газа в сети:*', 'chat_id': 868320310, 'message_id': 2029, 'parse_mode': 'markdown', 'reply_markup': '{"inline_keyboard": [[{"text": "»»»    30 сек    «««", "callback_data": "interval_30"}, {"text": "1 мин", "callback_data": "interval_60"}], [{"text": "3 мин", "callback_data": "interval_180"}, {"text": "5 мин", "callback_data": "interval_300"}], [{"text": "15 мин", "callback_data": "interval_900"}, {"text": "30 мин", "callback_data": "interval_1800"}], [{"text": "1 ч", "callback_data": "interval_3600"}, {"text": "4 ч", "callback_data": "interval_14400"}], [{"text": "12 ч", "callback_data": "interval_43200"}, {"text": "24 ч", "callback_data": "interval_86400"}], [{"text": "« Назад", "callback_data": "back_to_settings"}]]}'}" and files "None"
+2024-06-05 16:08:11 | DEB | Response for editMessageText: [200] "'{"ok":true,"result":{"message_id":2029,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717592887,"edit_date":1717592891,"text":"\\u0412\\u044b\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u0438\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b, \\u0441 \\u043a\\u043e\\u0442\\u043e\\u0440\\u044b\\u043c \\u0412\\u044b \\u0431\\u0443\\u0434\\u0435\\u0442\\u0435 \\u043f\\u043e\\u043b\\u0443\\u0447\\u0430\\u0442\\u044c \\u0438\\u043d\\u0444\\u043e\\u0440\\u043c\\u0430\\u0446\\u0438\\u044e \\u043e \\u0446\\u0435\\u043d\\u0435 \\u0433\\u0430\\u0437\\u0430 \\u0432 \\u0441\\u0435\\u0442\\u0438:","entities":[{"offset":0,"length":78,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u00bb\\u00bb\\u00bb    30 \\u0441\\u0435\\u043a    \\u00ab\\u00ab\\u00ab","callback_data":"interval_30"},{"text":"1 \\u043c\\u0438\\u043d","callback_data":"interval_60"}],[{"text":"3 \\u043c\\u0438\\u043d","callback_data":"interval_180"},{"text":"5 \\u043c\\u0438\\u043d","callback_data":"interval_300"}],[{"text":"15 \\u043c\\u0438\\u043d","callback_data":"interval_900"},{"text":"30 \\u043c\\u0438\\u043d","callback_data":"interval_1800"}],[{"text":"1 \\u0447","callback_data":"interval_3600"},{"text":"4 \\u0447","callback_data":"interval_14400"}],[{"text":"12 \\u0447","callback_data":"interval_43200"},{"text":"24 \\u0447","callback_data":"interval_86400"}],[{"text":"\\u00ab \\u041d\\u0430\\u0437\\u0430\\u0434","callback_data":"back_to_settings"}]]}}}'"
+2024-06-05 16:08:13 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722902981,\n"callback_query":{"id":"3729407338050459697","from":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"ru","is_premium":true},"message":{"message_id":2029,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717592887,"edit_date":1717592891,"text":"\\u0412\\u044b\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u0438\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b, \\u0441 \\u043a\\u043e\\u0442\\u043e\\u0440\\u044b\\u043c \\u0412\\u044b \\u0431\\u0443\\u0434\\u0435\\u0442\\u0435 \\u043f\\u043e\\u043b\\u0443\\u0447\\u0430\\u0442\\u044c \\u0438\\u043d\\u0444\\u043e\\u0440\\u043c\\u0430\\u0446\\u0438\\u044e \\u043e \\u0446\\u0435\\u043d\\u0435 \\u0433\\u0430\\u0437\\u0430 \\u0432 \\u0441\\u0435\\u0442\\u0438:","entities":[{"offset":0,"length":78,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u00bb\\u00bb\\u00bb    30 \\u0441\\u0435\\u043a    \\u00ab\\u00ab\\u00ab","callback_data":"interval_30"},{"text":"1 \\u043c\\u0438\\u043d","callback_data":"interval_60"}],[{"text":"3 \\u043c\\u0438\\u043d","callback_data":"interval_180"},{"text":"5 \\u043c\\u0438\\u043d","callback_data":"interval_300"}],[{"text":"15 \\u043c\\u0438\\u043d","callback_data":"interval_900"},{"text":"30 \\u043c\\u0438\\u043d","callback_data":"interval_1800"}],[{"text":"1 \\u0447","callback_data":"interval_3600"},{"text":"4 \\u0447","callback_data":"interval_14400"}],[{"text":"12 \\u0447","callback_data":"interval_43200"},{"text":"24 \\u0447","callback_data":"interval_86400"}],[{"text":"\\u00ab \\u041d\\u0430\\u0437\\u0430\\u0434","callback_data":"back_to_settings"}]]}},"chat_instance":"4318687453770464992","data":"back_to_settings"}}]}'"
+2024-06-05 16:08:13 | DEB | Received 1 updates.
+2024-06-05 16:08:13 | DEB | Make request: "editMessageText" with data: "{'text': '*Привет, это меню ETH Gas Monitoring Bot!*\n\nЗдесь Вы можете регулировать работу бота.', 'chat_id': 868320310, 'message_id': 2029, 'parse_mode': 'markdown', 'reply_markup': '{"inline_keyboard": [[{"text": "Интервалы", "callback_data": "set_interval"}], [{"text": "Язык", "callback_data": "set_language"}, {"text": "Выключить", "callback_data": "turn_on_off"}]]}'}" and files "None"
+2024-06-05 16:08:13 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:08:13 | DEB | Response for editMessageText: [200] "'{"ok":true,"result":{"message_id":2029,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1717592887,"edit_date":1717592893,"text":"\\u041f\\u0440\\u0438\\u0432\\u0435\\u0442, \\u044d\\u0442\\u043e \\u043c\\u0435\\u043d\\u044e ETH Gas Monitoring Bot!\\n\\n\\u0417\\u0434\\u0435\\u0441\\u044c \\u0412\\u044b \\u043c\\u043e\\u0436\\u0435\\u0442\\u0435 \\u0440\\u0435\\u0433\\u0443\\u043b\\u0438\\u0440\\u043e\\u0432\\u0430\\u0442\\u044c \\u0440\\u0430\\u0431\\u043e\\u0442\\u0443 \\u0431\\u043e\\u0442\\u0430.","entities":[{"offset":0,"length":40,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u0418\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b\\u044b","callback_data":"set_interval"}],[{"text":"\\u042f\\u0437\\u044b\\u043a","callback_data":"set_language"},{"text":"\\u0412\\u044b\\u043a\\u043b\\u044e\\u0447\\u0438\\u0442\\u044c","callback_data":"turn_on_off"}]]}}}'"
+2024-06-05 16:08:33 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:08:33 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:08:53 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:08:54 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:09:14 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:09:14 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:09:34 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:09:34 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:09:54 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:09:54 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:10:14 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:10:15 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:10:35 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:10:35 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:10:55 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:10:55 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:11:15 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:11:15 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:11:36 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:11:36 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:11:56 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:11:56 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:12:16 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:12:16 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:12:36 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:12:37 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:12:57 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:12:57 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:13:17 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:13:17 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:13:37 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:13:37 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:13:57 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:13:58 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:14:18 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:14:18 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:14:38 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:14:38 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:14:58 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:14:58 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:15:19 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:15:19 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:15:39 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:15:39 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:15:59 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:15:59 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:16:19 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:16:19 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:16:40 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:16:40 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:17:00 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:17:00 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:17:20 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:17:20 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:17:41 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:17:41 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:18:01 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:18:01 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:18:21 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:18:21 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:18:41 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:18:42 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:19:02 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:19:02 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:19:22 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:19:22 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:19:42 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:19:42 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:20:02 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:20:02 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:20:23 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:20:23 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:20:43 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:20:43 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:21:03 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:21:03 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:21:23 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:21:23 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:21:43 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:21:44 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:22:04 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:22:04 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:22:24 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:22:24 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:22:44 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-05 16:22:44 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:38:09 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 586, in _request
+    await resp.start(conn)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client_reqrep.py", line 900, in start
+    with self._timer:
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\helpers.py", line 725, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
+2024-06-05 16:38:14 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:38:14 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1155, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 562, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1169, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-06-05 16:38:19 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:38:19 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1155, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 562, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1169, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-06-05 16:38:24 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:38:24 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1155, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 562, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1169, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-06-05 16:38:29 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:38:29 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1155, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 562, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1169, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-06-05 16:39:04 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:39:04 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1155, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 562, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1169, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-06-05 16:39:09 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:39:09 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1155, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 562, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1169, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-06-05 16:39:14 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:39:14 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1155, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 562, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1169, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-06-05 16:39:19 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:39:19 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1155, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 562, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1169, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-06-05 16:39:24 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:39:24 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1155, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 562, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1169, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-06-05 16:39:29 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:39:29 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1155, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 562, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1169, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-06-05 16:39:34 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:39:34 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1155, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 562, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1169, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-06-05 16:39:39 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:39:39 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1155, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 562, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1169, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-06-05 16:39:44 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:39:44 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1155, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 562, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1169, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-06-05 16:39:49 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:39:49 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1155, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 562, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1169, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-06-05 16:39:54 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
+2024-06-05 16:39:54 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1155, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 874, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "C:\Program Files\Python310\lib\asyncio\base_events.py", line 863, in getaddrinfo
+    return await self.run_in_executor(
+  File "C:\Program Files\Python310\lib\concurrent\futures\thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Program Files\Python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11004] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 562, in _request
+    conn = await self._connector.connect(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 540, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 901, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\connector.py", line 1169, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2024-06-05 16:39:59 | DEB | Make request: "getUpdates" with data: "{'offset': 722902982, 'timeout': 20}" and files "None"
