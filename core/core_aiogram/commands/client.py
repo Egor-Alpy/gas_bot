@@ -1,8 +1,5 @@
 # IMPORT ----- IMPORT ----- IMPORT ----- IMPORT ----- IMPORT ----- IMPORT ----- IMPORT ----- IMPORT ----- IMPORT ----- I
-import asyncio
-import datetime
-
-from data.text import get_msg_channels_to_subscribe, get_msg_gas_price, MSG, BUTTONS
+from data.text import get_msg_channels_to_subscribe, MSG, BUTTONS
 from aiogram.dispatcher import FSMContext
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
@@ -15,51 +12,25 @@ from core.logger_config import logger
 from core.core_aiogram.keyboards import get_interval_markup, get_language_markup
 from data.config import ADMINS
 
-from datetime import datetime, timedelta, timezone
-
-
-async def check_user_subscriptions(user_id: int) -> bool:
-    previous_subscription_status = table_users.get_subscription_status(user_id)
-    channel_tags = table_channels.get_channel_tags()
-    if not channel_tags:
-        table_users.set_subscription_status('True', user_id)
-        return True
-
-    for channel_tag in channel_tags:
-        LAN = table_users.get_user_language(user_id)
-        try:
-            user_channel_status = await bot.get_chat_member(chat_id='@' + channel_tag, user_id=user_id)
-            if user_channel_status['status'] not in ['creator', 'administrator', 'member'] and int(
-                    user_id) not in ADMINS:
-                if previous_subscription_status == 'True':
-                    await bot.send_message(chat_id=user_id, text=MSG[LAN]['SUB']['CLOSED'], parse_mode='markdown')
-                table_users.set_subscription_status('False', user_id)
-                return False
-        except Exception as e:
-            if str(e) == 'User not found':
-                logger.info(f'Bot does not have rights in [{channel_tag}] channel')
-        if previous_subscription_status == 'False':
-            await bot.send_message(chat_id=user_id, text=MSG[LAN]['SUB']['OPENED'], parse_mode='markdown')
-        table_users.set_subscription_status('True', user_id)
-        return True
+from core.utilities import check_user_subscriptions
 
 
 @dp.callback_query_handler(lambda call: call.data.startswith('turn_on_off'))
 async def turn_on_off_callback_func(callback: types.CallbackQuery, state: FSMContext):
     # проверка на подписку каналов
+    LAN = table_users.get_user_language(callback.message.chat.id)
     if not await check_user_subscriptions(callback.message.chat.id) and callback.message.chat.id not in ADMINS:
         channels = ''
         for tag in table_channels.get_channel_tags():
             channels += f'\n@{tag}'
         await bot.send_message(chat_id=callback.message.chat.id,
-                               text=get_msg_channels_to_subscribe(),
+                               text=get_msg_channels_to_subscribe(LAN),
                                parse_mode='markdown')
         await callback.answer()
         return
 
     user_previous_interval = table_users.get_user_interval(callback.message.chat.id)
     kb_settings = InlineKeyboardMarkup()
-    LAN = table_users.get_user_language(callback.message.chat.id)
     btn_choose_interval = InlineKeyboardButton(BUTTONS[LAN]['INTERVAL'], callback_data='set_interval')
     btn_choose_language = InlineKeyboardButton(BUTTONS[LAN]['LANGUAGE'], callback_data='set_language')
     current_interval = table_users.get_user_interval(callback.message.chat.id)
@@ -92,7 +63,7 @@ async def turn_on_off_func(callback: types.CallbackQuery):
         for tag in table_channels.get_channel_tags():
             channels += f'\n@{tag}'
         await bot.send_message(chat_id=callback.message.chat.id,
-                               text=get_msg_channels_to_subscribe(),
+                               text=get_msg_channels_to_subscribe(LAN),
                                parse_mode='markdown')
         await callback.answer()
         return
@@ -107,12 +78,13 @@ async def turn_on_off_func(callback: types.CallbackQuery):
 @dp.callback_query_handler(lambda call: call.data.startswith('interval'))
 async def set_new_user_interval_func(callback: types.CallbackQuery):
     # проверка на подписку каналов
+    LAN = table_users.get_user_language(callback.message.chat.id)
     if not await check_user_subscriptions(callback.message.chat.id) and callback.message.chat.id not in ADMINS:
         channels = ''
         for tag in table_channels.get_channel_tags():
             channels += f'\n@{tag}'
         await bot.send_message(chat_id=callback.message.chat.id,
-                               text=get_msg_channels_to_subscribe(),
+                               text=get_msg_channels_to_subscribe(LAN),
                                parse_mode='markdown')
         await callback.answer()
         return
@@ -129,12 +101,13 @@ async def set_new_user_interval_func(callback: types.CallbackQuery):
 
 @dp.callback_query_handler(lambda call: call.data.startswith('set_language'))
 async def choose_language_func(callback: types.CallbackQuery):
+    LAN = table_users.get_user_language(callback.message.chat.id)
     if not await check_user_subscriptions(callback.message.chat.id) and callback.message.chat.id not in ADMINS:
         channels = ''
         for tag in table_channels.get_channel_tags():
             channels += f'\n@{tag}'
         await bot.send_message(chat_id=callback.message.chat.id,
-                               text=get_msg_channels_to_subscribe(),
+                               text=get_msg_channels_to_subscribe(LAN),
                                parse_mode='markdown')
         await callback.answer()
         return
@@ -163,12 +136,13 @@ async def set_language_func(callback: types.CallbackQuery):
 @dp.callback_query_handler(lambda call: call.data.startswith('back_to_settings'))
 async def back_to_settings_func(callback: types.CallbackQuery):
     # проверка на подписку каналов
+    LAN = table_users.get_user_language(callback.message.chat.id)
     if not await check_user_subscriptions(callback.message.chat.id) and callback.message.chat.id not in ADMINS:
         channels = ''
         for tag in table_channels.get_channel_tags():
             channels += f'\n@{tag}'
         await bot.send_message(chat_id=callback.message.chat.id,
-                               text=get_msg_channels_to_subscribe(),
+                               text=get_msg_channels_to_subscribe(LAN),
                                parse_mode='markdown')
         await callback.answer()
         return

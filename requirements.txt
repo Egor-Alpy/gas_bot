@@ -1,2 +1,5 @@
 aiogram==2.25.1
 web3==6.14.0
+
+requests~=2.31.0
+pycoingecko~=3.1.0

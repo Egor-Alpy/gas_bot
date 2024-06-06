@@ -1,5 +1,4 @@
 from core.logger_config import PROJECT_NAME
-from core.client_web3.client import Client
 from core.database.database_main import table_channels
 
 CMD_START = 'start'
@@ -162,20 +161,11 @@ def get_msg_channels_to_subscribe(LAN):
     return msg
 
 
-last_tickers_prices = {"BTCUSDT": '', "ETHUSDT": '', 'BNBUSDT': '', 'SOLUSDT': '', "TONUSDT": ''}
+def get_msg_gas_price(LAN, financial_data):
+    gas = financial_data['gas_price']
+    prices = financial_data['ticker_prices']
+    market_data = financial_data['market_data']
 
-
-def get_msg_gas_price(LAN):
-    global last_tickers_prices
-    prices = Client.get_tickers_prices(last_tickers_prices)
-    last_tickers_prices = prices
-    # market_data = Client.get_coin_gecko_data()
-    gas = Client.get_gas_price()
-    market_data = {}
-    market_data["market_cap_usd"] = '1'
-    market_data["volume_24h_usd"] = '2'
-    market_data["dominance_btc_percentage"] = '3'
-    market_data["dominance_eth_percentage"] = '4'
     if gas < 20:
         indicator = '🟩'
     elif 20 <= gas < 40:

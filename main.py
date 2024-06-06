@@ -27,7 +27,6 @@ def start_message_sender():
 
 
 def main():
-    # executor.start_polling(dispatcher=dp, skip_updates=True, on_startup=on_startup)
     while True:
         try:
             executor.start_polling(

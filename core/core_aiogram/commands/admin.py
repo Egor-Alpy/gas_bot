@@ -13,34 +13,31 @@ from data.text import MSG, msg_soft_not_added, msg_soft_added, BUTTONS
 from core.core_aiogram.keyboards import get_channels_inlinekeyboard_4delete
 
 
-async def add_channel(message: types.Message, LAN):
+async def add_channel(message: types.Message):
     await AddChannelStatesGroup.get_id.set()
-    await bot.send_message(chat_id=message.chat.id, text=MSG[LAN]['ADMIN']['CHANNEL']['ADD'], parse_mode='markdown')
+    await bot.send_message(chat_id=message.chat.id, text=MSG['RUS']['ADMIN']['CHANNEL']['ADD'], parse_mode='markdown')
 
 
-async def del_channel(message: types.Message, state: FSMContext, LAN):
-    await proxy_add_value(state, 'LAN', LAN)
-    await bot.send_message(chat_id=message.chat.id, text=MSG[LAN]['ADMIN']['CHANNEL']['DEL'], parse_mode='markdown',
+async def del_channel(message: types.Message, state: FSMContext):
+    await bot.send_message(chat_id=message.chat.id, text=MSG['RUS']['ADMIN']['CHANNEL']['DEL'], parse_mode='markdown',
                            reply_markup=get_channels_inlinekeyboard_4delete())
 
 
-async def send_msg_to_all(message: types.Message, state: FSMContext, LAN):
+async def send_msg_to_all(message: types.Message, state: FSMContext):
     await SendMsgToAllStatesGroup.get_msg.set()
-    await proxy_add_value(state, 'LAN', LAN)
     await bot.send_message(chat_id=message.chat.id,
-                           text=MSG[LAN]['ADMIN']['SEND_MSG']['INPUT'],
+                           text=MSG['RUS']['ADMIN']['SEND_MSG']['INPUT'],
                            parse_mode='markdown')
 
 
 @dp.message_handler(content_types=types.ContentType.ANY, state=SendMsgToAllStatesGroup.get_msg)
 async def confirmation(message: types.Message, state: FSMContext):
-    LAN = await proxy_get_value(state, 'LAN')
-    btn_yes = InlineKeyboardButton(BUTTONS[LAN]['PROMO']['SEND'], callback_data='send_confirm')
-    btn_no = InlineKeyboardButton(BUTTONS[LAN]['PROMO']['EDIT'], callback_data='send_edit')
+    btn_yes = InlineKeyboardButton(BUTTONS['RUS']['PROMO']['SEND'], callback_data='send_confirm')
+    btn_no = InlineKeyboardButton(BUTTONS['RUS']['PROMO']['EDIT'], callback_data='send_edit')
     confirm_sending = InlineKeyboardMarkup()
     confirm_sending.add(btn_yes, btn_no)
     await SendMsgToAllStatesGroup.confirmation.set()
-    await bot.send_message(chat_id=message.chat.id, text=MSG[LAN]['ADMIN']['SEND_MSG']['CHECK'], parse_mode='markdown'
+    await bot.send_message(chat_id=message.chat.id, text=MSG['RUS']['ADMIN']['SEND_MSG']['CHECK'], parse_mode='markdown'
                            , reply_markup=confirm_sending)
     await message.send_copy(chat_id=message.chat.id)
     await proxy_add_value(state, 'msg_keyboard_id', message.message_id + 1)
@@ -49,7 +46,6 @@ async def confirmation(message: types.Message, state: FSMContext):
 
 @dp.callback_query_handler(lambda call: call.data.startswith('send'), state=SendMsgToAllStatesGroup.confirmation)
 async def confirm_end(callback: types.CallbackQuery, state: FSMContext):
-    LAN = await proxy_get_value(state, 'LAN')
     message = await proxy_get_value(state, 'message')
     message_id = await proxy_get_value(state, 'msg_keyboard_id')
     list_of_tasks = []
@@ -60,17 +56,17 @@ async def confirm_end(callback: types.CallbackQuery, state: FSMContext):
         await state.finish()
         await callback.answer()
         await bot.edit_message_text(chat_id=callback.message.chat.id, message_id=message_id,
-                                    text=MSG[LAN]['ADMIN']['SEND_MSG']['SENT'],
+                                    text=MSG['RUS']['ADMIN']['SEND_MSG']['SENT'],
                                     reply_markup=None, parse_mode='markdown')
     elif callback.data == 'send_edit':
         await bot.send_message(chat_id=callback.message.chat.id,
-                               text=MSG[LAN]['ADMIN']['SEND_MSG']['INPUT'],
+                               text=MSG['RUS']['ADMIN']['SEND_MSG']['INPUT'],
                                parse_mode='markdown')
         await SendMsgToAllStatesGroup.get_msg.set()
         await callback.answer()
         await proxy_add_value(state, 'msg_keyboard_id', callback.message.message_id + 1)
         await bot.edit_message_text(chat_id=callback.message.chat.id, message_id=message_id,
-                                    text=MSG[LAN]['ADMIN']['SEND_MSG']['SENT'],
+                                    text=MSG['RUS']['ADMIN']['SEND_MSG']['EDIT'],
                                     reply_markup=None, parse_mode='markdown')
 
 

@@ -6,7 +6,6 @@ from core.core_aiogram.commands.client import *
 from core.core_aiogram.commands.admin import *
 from core.main_loop import *
 from core.database.database_main import table_users
-from core.logger_config import logger
 
 
 async def set_commands():
@@ -37,6 +36,7 @@ async def commands_all(message: types.Message) -> None:
         else:
             await bot.send_message(chat_id=message.chat.id, text=MSG[LAN]['NO_ROOTS'])
             return
+    print(await check_user_subscriptions(message.chat.id))
     if not await check_user_subscriptions(message.chat.id):
         await bot.send_message(chat_id=message.chat.id, text=get_msg_channels_to_subscribe(LAN), parse_mode='markdown')
     else:
