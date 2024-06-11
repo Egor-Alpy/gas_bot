@@ -1,0 +1,415 @@
+2024-06-11 16:43:04 | INF | Database: table 'users' has been connected!
+2024-06-11 16:43:04 | INF | Database: table 'channels' has been connected!
+2024-06-11 16:43:04 | DEB | Consider installing rusty-rlp to improve pyrlp performance with a rust basedbackend. Not currently functional for Python 3.11
+2024-06-11 16:43:05 | INF | Thread: Sending process has been started!
+2024-06-11 16:43:05 | DEB | Using proactor: IocpProactor
+2024-06-11 16:43:05 | DEB | Make request: "getMe" with data: "{}" and files "None"
+2024-06-11 16:43:05 | DEB | Response for getMe: [200] "'{"ok":true,"result":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot","can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":false,"can_connect_to_business":false}}'"
+2024-06-11 16:43:05 | INF | Bot: ETH Gas Monitoring Bot [@tokito_gasbot]
+2024-06-11 16:43:05 | DEB | Make request: "getWebhookInfo" with data: "{}" and files "None"
+2024-06-11 16:43:05 | DEB | Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
+2024-06-11 16:43:05 | DEB | Make request: "deleteWebhook" with data: "{'drop_pending_updates': True}" and files "None"
+2024-06-11 16:43:05 | DEB | Response for deleteWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook is already deleted"}'"
+2024-06-11 16:43:05 | WAR | Updates were skipped successfully.
+2024-06-11 16:43:05 | DEB | Make request: "setMyCommands" with data: "{'commands': '[{"command": "/menu", "description": "настройки"}, {"command": "/help", "description": "поддержка"}]'}" and files "None"
+2024-06-11 16:43:05 | DEB | Response for setMyCommands: [200] "'{"ok":true,"result":true}'"
+2024-06-11 16:43:05 | DEB | ETH Gas Monitoring Bot has been started!
+2024-06-11 16:43:05 | INF | Start polling.
+2024-06-11 16:43:05 | DEB | Make request: "getWebhookInfo" with data: "{}" and files "None"
+2024-06-11 16:43:05 | DEB | Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
+2024-06-11 16:43:05 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 16:43:25 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:43:25 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 16:43:45 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:43:46 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 16:44:06 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:44:06 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 16:44:26 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:44:26 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 16:44:46 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:44:46 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 16:45:06 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:45:06 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 16:45:26 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:45:26 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 16:45:46 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:45:47 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 16:46:07 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:46:07 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 16:46:27 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:46:27 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 16:46:47 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:46:47 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 16:47:07 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:47:07 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 16:47:27 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:47:27 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 16:47:47 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:47:47 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 16:48:08 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:48:08 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 16:48:28 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:48:28 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 16:48:48 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:48:48 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 16:49:08 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:49:08 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 16:49:28 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:49:28 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 16:49:32 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722903360,\n"message":{"message_id":5323,"from":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"en","is_premium":true},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1718113774,"text":"/menu","entities":[{"offset":0,"length":5,"type":"bot_command"}]}}]}'"
+2024-06-11 16:49:32 | DEB | Received 1 updates.
+2024-06-11 16:49:32 | DEB | Make request: "getChatMember" with data: "{'chat_id': '@testik_for', 'user_id': 868320310}" and files "None"
+2024-06-11 16:49:32 | DEB | Response for getChatMember: [200] "'{"ok":true,"result":{"user":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"en","is_premium":true},"status":"creator","is_anonymous":false}}'"
+2024-06-11 16:49:32 | DEB | Make request: "getChatMember" with data: "{'chat_id': '@testik_for', 'user_id': 868320310}" and files "None"
+2024-06-11 16:49:32 | DEB | Response for getChatMember: [200] "'{"ok":true,"result":{"user":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"en","is_premium":true},"status":"creator","is_anonymous":false}}'"
+2024-06-11 16:49:32 | DEB | Make request: "sendMessage" with data: "{'chat_id': 868320310, 'text': '*Привет, это меню ETH Gas Monitoring Bot!*\n\nЗдесь Вы можете регулировать работу бота.', 'parse_mode': 'markdown', 'reply_markup': '{"inline_keyboard": [[{"text": "Интервалы", "callback_data": "set_interval"}], [{"text": "Язык", "callback_data": "set_language"}, {"text": "Выключить", "callback_data": "turn_on_off"}]]}'}" and files "None"
+2024-06-11 16:49:32 | DEB | Make request: "getUpdates" with data: "{'offset': 722903361, 'timeout': 20}" and files "None"
+2024-06-11 16:49:32 | DEB | Response for sendMessage: [200] "'{"ok":true,"result":{"message_id":5324,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1718113774,"text":"\\u041f\\u0440\\u0438\\u0432\\u0435\\u0442, \\u044d\\u0442\\u043e \\u043c\\u0435\\u043d\\u044e ETH Gas Monitoring Bot!\\n\\n\\u0417\\u0434\\u0435\\u0441\\u044c \\u0412\\u044b \\u043c\\u043e\\u0436\\u0435\\u0442\\u0435 \\u0440\\u0435\\u0433\\u0443\\u043b\\u0438\\u0440\\u043e\\u0432\\u0430\\u0442\\u044c \\u0440\\u0430\\u0431\\u043e\\u0442\\u0443 \\u0431\\u043e\\u0442\\u0430.","entities":[{"offset":0,"length":40,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u0418\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b\\u044b","callback_data":"set_interval"}],[{"text":"\\u042f\\u0437\\u044b\\u043a","callback_data":"set_language"},{"text":"\\u0412\\u044b\\u043a\\u043b\\u044e\\u0447\\u0438\\u0442\\u044c","callback_data":"turn_on_off"}]]}}}'"
+2024-06-11 16:49:35 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722903361,\n"callback_query":{"id":"3729407335687332021","from":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"en","is_premium":true},"message":{"message_id":5324,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1718113774,"text":"\\u041f\\u0440\\u0438\\u0432\\u0435\\u0442, \\u044d\\u0442\\u043e \\u043c\\u0435\\u043d\\u044e ETH Gas Monitoring Bot!\\n\\n\\u0417\\u0434\\u0435\\u0441\\u044c \\u0412\\u044b \\u043c\\u043e\\u0436\\u0435\\u0442\\u0435 \\u0440\\u0435\\u0433\\u0443\\u043b\\u0438\\u0440\\u043e\\u0432\\u0430\\u0442\\u044c \\u0440\\u0430\\u0431\\u043e\\u0442\\u0443 \\u0431\\u043e\\u0442\\u0430.","entities":[{"offset":0,"length":40,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u0418\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b\\u044b","callback_data":"set_interval"}],[{"text":"\\u042f\\u0437\\u044b\\u043a","callback_data":"set_language"},{"text":"\\u0412\\u044b\\u043a\\u043b\\u044e\\u0447\\u0438\\u0442\\u044c","callback_data":"turn_on_off"}]]}},"chat_instance":"4318687453770464992","data":"set_interval"}}]}'"
+2024-06-11 16:49:35 | DEB | Received 1 updates.
+2024-06-11 16:49:35 | DEB | Make request: "getChatMember" with data: "{'chat_id': '@testik_for', 'user_id': 868320310}" and files "None"
+2024-06-11 16:49:35 | DEB | Response for getChatMember: [200] "'{"ok":true,"result":{"user":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"en","is_premium":true},"status":"creator","is_anonymous":false}}'"
+2024-06-11 16:49:35 | DEB | Make request: "answerCallbackQuery" with data: "{'callback_query_id': '3729407335687332021'}" and files "None"
+2024-06-11 16:49:35 | DEB | Make request: "getUpdates" with data: "{'offset': 722903362, 'timeout': 20}" and files "None"
+2024-06-11 16:49:35 | DEB | Response for answerCallbackQuery: [200] "'{"ok":true,"result":true}'"
+2024-06-11 16:49:35 | DEB | Make request: "editMessageText" with data: "{'text': '*Выберите интервал, с которым Вы будете получать информацию о цене газа в сети:*', 'chat_id': 868320310, 'message_id': 5324, 'parse_mode': 'markdown', 'reply_markup': '{"inline_keyboard": [[{"text": "»»»    30 сек    «««", "callback_data": "interval_30"}, {"text": "1 мин", "callback_data": "interval_60"}], [{"text": "3 мин", "callback_data": "interval_180"}, {"text": "5 мин", "callback_data": "interval_300"}], [{"text": "15 мин", "callback_data": "interval_900"}, {"text": "30 мин", "callback_data": "interval_1800"}], [{"text": "1 ч", "callback_data": "interval_3600"}, {"text": "4 ч", "callback_data": "interval_14400"}], [{"text": "12 ч", "callback_data": "interval_43200"}, {"text": "24 ч", "callback_data": "interval_86400"}], [{"text": "« Назад", "callback_data": "back_to_settings"}]]}'}" and files "None"
+2024-06-11 16:49:35 | DEB | Response for editMessageText: [200] "'{"ok":true,"result":{"message_id":5324,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1718113774,"edit_date":1718113776,"text":"\\u0412\\u044b\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u0438\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b, \\u0441 \\u043a\\u043e\\u0442\\u043e\\u0440\\u044b\\u043c \\u0412\\u044b \\u0431\\u0443\\u0434\\u0435\\u0442\\u0435 \\u043f\\u043e\\u043b\\u0443\\u0447\\u0430\\u0442\\u044c \\u0438\\u043d\\u0444\\u043e\\u0440\\u043c\\u0430\\u0446\\u0438\\u044e \\u043e \\u0446\\u0435\\u043d\\u0435 \\u0433\\u0430\\u0437\\u0430 \\u0432 \\u0441\\u0435\\u0442\\u0438:","entities":[{"offset":0,"length":78,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u00bb\\u00bb\\u00bb    30 \\u0441\\u0435\\u043a    \\u00ab\\u00ab\\u00ab","callback_data":"interval_30"},{"text":"1 \\u043c\\u0438\\u043d","callback_data":"interval_60"}],[{"text":"3 \\u043c\\u0438\\u043d","callback_data":"interval_180"},{"text":"5 \\u043c\\u0438\\u043d","callback_data":"interval_300"}],[{"text":"15 \\u043c\\u0438\\u043d","callback_data":"interval_900"},{"text":"30 \\u043c\\u0438\\u043d","callback_data":"interval_1800"}],[{"text":"1 \\u0447","callback_data":"interval_3600"},{"text":"4 \\u0447","callback_data":"interval_14400"}],[{"text":"12 \\u0447","callback_data":"interval_43200"},{"text":"24 \\u0447","callback_data":"interval_86400"}],[{"text":"\\u00ab \\u041d\\u0430\\u0437\\u0430\\u0434","callback_data":"back_to_settings"}]]}}}'"
+2024-06-11 16:49:36 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722903362,\n"callback_query":{"id":"3729407337191352677","from":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"en","is_premium":true},"message":{"message_id":5324,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1718113774,"edit_date":1718113776,"text":"\\u0412\\u044b\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u0438\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b, \\u0441 \\u043a\\u043e\\u0442\\u043e\\u0440\\u044b\\u043c \\u0412\\u044b \\u0431\\u0443\\u0434\\u0435\\u0442\\u0435 \\u043f\\u043e\\u043b\\u0443\\u0447\\u0430\\u0442\\u044c \\u0438\\u043d\\u0444\\u043e\\u0440\\u043c\\u0430\\u0446\\u0438\\u044e \\u043e \\u0446\\u0435\\u043d\\u0435 \\u0433\\u0430\\u0437\\u0430 \\u0432 \\u0441\\u0435\\u0442\\u0438:","entities":[{"offset":0,"length":78,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u00bb\\u00bb\\u00bb    30 \\u0441\\u0435\\u043a    \\u00ab\\u00ab\\u00ab","callback_data":"interval_30"},{"text":"1 \\u043c\\u0438\\u043d","callback_data":"interval_60"}],[{"text":"3 \\u043c\\u0438\\u043d","callback_data":"interval_180"},{"text":"5 \\u043c\\u0438\\u043d","callback_data":"interval_300"}],[{"text":"15 \\u043c\\u0438\\u043d","callback_data":"interval_900"},{"text":"30 \\u043c\\u0438\\u043d","callback_data":"interval_1800"}],[{"text":"1 \\u0447","callback_data":"interval_3600"},{"text":"4 \\u0447","callback_data":"interval_14400"}],[{"text":"12 \\u0447","callback_data":"interval_43200"},{"text":"24 \\u0447","callback_data":"interval_86400"}],[{"text":"\\u00ab \\u041d\\u0430\\u0437\\u0430\\u0434","callback_data":"back_to_settings"}]]}},"chat_instance":"4318687453770464992","data":"interval_60"}}]}'"
+2024-06-11 16:49:36 | DEB | Received 1 updates.
+2024-06-11 16:49:36 | DEB | Make request: "getChatMember" with data: "{'chat_id': '@testik_for', 'user_id': 868320310}" and files "None"
+2024-06-11 16:49:36 | DEB | Response for getChatMember: [200] "'{"ok":true,"result":{"user":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"en","is_premium":true},"status":"creator","is_anonymous":false}}'"
+2024-06-11 16:49:37 | DEB | Make request: "editMessageReplyMarkup" with data: "{'chat_id': 868320310, 'message_id': 5324, 'reply_markup': '{"inline_keyboard": [[{"text": "30 сек", "callback_data": "interval_30"}, {"text": "»»»    1 мин    «««", "callback_data": "interval_60"}], [{"text": "3 мин", "callback_data": "interval_180"}, {"text": "5 мин", "callback_data": "interval_300"}], [{"text": "15 мин", "callback_data": "interval_900"}, {"text": "30 мин", "callback_data": "interval_1800"}], [{"text": "1 ч", "callback_data": "interval_3600"}, {"text": "4 ч", "callback_data": "interval_14400"}], [{"text": "12 ч", "callback_data": "interval_43200"}, {"text": "24 ч", "callback_data": "interval_86400"}], [{"text": "« Назад", "callback_data": "back_to_settings"}]]}'}" and files "None"
+2024-06-11 16:49:37 | DEB | Make request: "getUpdates" with data: "{'offset': 722903363, 'timeout': 20}" and files "None"
+2024-06-11 16:49:37 | DEB | Response for editMessageReplyMarkup: [200] "'{"ok":true,"result":{"message_id":5324,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1718113774,"edit_date":1718113778,"text":"\\u0412\\u044b\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u0438\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b, \\u0441 \\u043a\\u043e\\u0442\\u043e\\u0440\\u044b\\u043c \\u0412\\u044b \\u0431\\u0443\\u0434\\u0435\\u0442\\u0435 \\u043f\\u043e\\u043b\\u0443\\u0447\\u0430\\u0442\\u044c \\u0438\\u043d\\u0444\\u043e\\u0440\\u043c\\u0430\\u0446\\u0438\\u044e \\u043e \\u0446\\u0435\\u043d\\u0435 \\u0433\\u0430\\u0437\\u0430 \\u0432 \\u0441\\u0435\\u0442\\u0438:","entities":[{"offset":0,"length":78,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"30 \\u0441\\u0435\\u043a","callback_data":"interval_30"},{"text":"\\u00bb\\u00bb\\u00bb    1 \\u043c\\u0438\\u043d    \\u00ab\\u00ab\\u00ab","callback_data":"interval_60"}],[{"text":"3 \\u043c\\u0438\\u043d","callback_data":"interval_180"},{"text":"5 \\u043c\\u0438\\u043d","callback_data":"interval_300"}],[{"text":"15 \\u043c\\u0438\\u043d","callback_data":"interval_900"},{"text":"30 \\u043c\\u0438\\u043d","callback_data":"interval_1800"}],[{"text":"1 \\u0447","callback_data":"interval_3600"},{"text":"4 \\u0447","callback_data":"interval_14400"}],[{"text":"12 \\u0447","callback_data":"interval_43200"},{"text":"24 \\u0447","callback_data":"interval_86400"}],[{"text":"\\u00ab \\u041d\\u0430\\u0437\\u0430\\u0434","callback_data":"back_to_settings"}]]}}}'"
+2024-06-11 16:49:37 | DEB | Make request: "answerCallbackQuery" with data: "{'callback_query_id': '3729407337191352677'}" and files "None"
+2024-06-11 16:49:37 | DEB | Response for answerCallbackQuery: [200] "'{"ok":true,"result":true}'"
+2024-06-11 16:49:38 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722903363,\n"callback_query":{"id":"3729407334501614194","from":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"en","is_premium":true},"message":{"message_id":5324,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1718113774,"edit_date":1718113778,"text":"\\u0412\\u044b\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u0438\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b, \\u0441 \\u043a\\u043e\\u0442\\u043e\\u0440\\u044b\\u043c \\u0412\\u044b \\u0431\\u0443\\u0434\\u0435\\u0442\\u0435 \\u043f\\u043e\\u043b\\u0443\\u0447\\u0430\\u0442\\u044c \\u0438\\u043d\\u0444\\u043e\\u0440\\u043c\\u0430\\u0446\\u0438\\u044e \\u043e \\u0446\\u0435\\u043d\\u0435 \\u0433\\u0430\\u0437\\u0430 \\u0432 \\u0441\\u0435\\u0442\\u0438:","entities":[{"offset":0,"length":78,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"30 \\u0441\\u0435\\u043a","callback_data":"interval_30"},{"text":"\\u00bb\\u00bb\\u00bb    1 \\u043c\\u0438\\u043d    \\u00ab\\u00ab\\u00ab","callback_data":"interval_60"}],[{"text":"3 \\u043c\\u0438\\u043d","callback_data":"interval_180"},{"text":"5 \\u043c\\u0438\\u043d","callback_data":"interval_300"}],[{"text":"15 \\u043c\\u0438\\u043d","callback_data":"interval_900"},{"text":"30 \\u043c\\u0438\\u043d","callback_data":"interval_1800"}],[{"text":"1 \\u0447","callback_data":"interval_3600"},{"text":"4 \\u0447","callback_data":"interval_14400"}],[{"text":"12 \\u0447","callback_data":"interval_43200"},{"text":"24 \\u0447","callback_data":"interval_86400"}],[{"text":"\\u00ab \\u041d\\u0430\\u0437\\u0430\\u0434","callback_data":"back_to_settings"}]]}},"chat_instance":"4318687453770464992","data":"back_to_settings"}}]}'"
+2024-06-11 16:49:38 | DEB | Received 1 updates.
+2024-06-11 16:49:38 | DEB | Make request: "getChatMember" with data: "{'chat_id': '@testik_for', 'user_id': 868320310}" and files "None"
+2024-06-11 16:49:38 | DEB | Response for getChatMember: [200] "'{"ok":true,"result":{"user":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"en","is_premium":true},"status":"creator","is_anonymous":false}}'"
+2024-06-11 16:49:38 | DEB | Make request: "editMessageText" with data: "{'text': '*Привет, это меню ETH Gas Monitoring Bot!*\n\nЗдесь Вы можете регулировать работу бота.', 'chat_id': 868320310, 'message_id': 5324, 'parse_mode': 'markdown', 'reply_markup': '{"inline_keyboard": [[{"text": "Интервалы", "callback_data": "set_interval"}], [{"text": "Язык", "callback_data": "set_language"}, {"text": "Выключить", "callback_data": "turn_on_off"}]]}'}" and files "None"
+2024-06-11 16:49:38 | DEB | Make request: "getUpdates" with data: "{'offset': 722903364, 'timeout': 20}" and files "None"
+2024-06-11 16:49:38 | DEB | Response for editMessageText: [200] "'{"ok":true,"result":{"message_id":5324,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1718113774,"edit_date":1718113779,"text":"\\u041f\\u0440\\u0438\\u0432\\u0435\\u0442, \\u044d\\u0442\\u043e \\u043c\\u0435\\u043d\\u044e ETH Gas Monitoring Bot!\\n\\n\\u0417\\u0434\\u0435\\u0441\\u044c \\u0412\\u044b \\u043c\\u043e\\u0436\\u0435\\u0442\\u0435 \\u0440\\u0435\\u0433\\u0443\\u043b\\u0438\\u0440\\u043e\\u0432\\u0430\\u0442\\u044c \\u0440\\u0430\\u0431\\u043e\\u0442\\u0443 \\u0431\\u043e\\u0442\\u0430.","entities":[{"offset":0,"length":40,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u0418\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b\\u044b","callback_data":"set_interval"}],[{"text":"\\u042f\\u0437\\u044b\\u043a","callback_data":"set_language"},{"text":"\\u0412\\u044b\\u043a\\u043b\\u044e\\u0447\\u0438\\u0442\\u044c","callback_data":"turn_on_off"}]]}}}'"
+2024-06-11 16:49:40 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722903364,\n"callback_query":{"id":"3729407336375824984","from":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"en","is_premium":true},"message":{"message_id":5324,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1718113774,"edit_date":1718113779,"text":"\\u041f\\u0440\\u0438\\u0432\\u0435\\u0442, \\u044d\\u0442\\u043e \\u043c\\u0435\\u043d\\u044e ETH Gas Monitoring Bot!\\n\\n\\u0417\\u0434\\u0435\\u0441\\u044c \\u0412\\u044b \\u043c\\u043e\\u0436\\u0435\\u0442\\u0435 \\u0440\\u0435\\u0433\\u0443\\u043b\\u0438\\u0440\\u043e\\u0432\\u0430\\u0442\\u044c \\u0440\\u0430\\u0431\\u043e\\u0442\\u0443 \\u0431\\u043e\\u0442\\u0430.","entities":[{"offset":0,"length":40,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u0418\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b\\u044b","callback_data":"set_interval"}],[{"text":"\\u042f\\u0437\\u044b\\u043a","callback_data":"set_language"},{"text":"\\u0412\\u044b\\u043a\\u043b\\u044e\\u0447\\u0438\\u0442\\u044c","callback_data":"turn_on_off"}]]}},"chat_instance":"4318687453770464992","data":"set_language"}}]}'"
+2024-06-11 16:49:40 | DEB | Received 1 updates.
+2024-06-11 16:49:40 | DEB | Make request: "getChatMember" with data: "{'chat_id': '@testik_for', 'user_id': 868320310}" and files "None"
+2024-06-11 16:49:40 | DEB | Response for getChatMember: [200] "'{"ok":true,"result":{"user":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"en","is_premium":true},"status":"creator","is_anonymous":false}}'"
+2024-06-11 16:49:40 | DEB | Make request: "editMessageText" with data: "{'text': '*Выберите язык:*', 'chat_id': 868320310, 'message_id': 5324, 'parse_mode': 'markdown', 'reply_markup': '{"inline_keyboard": [[{"text": "»»»    Русский    «««", "callback_data": "language_RUS"}], [{"text": "English", "callback_data": "language_ENG"}], [{"text": "« Назад", "callback_data": "back_to_settings"}]]}'}" and files "None"
+2024-06-11 16:49:40 | DEB | Make request: "getUpdates" with data: "{'offset': 722903365, 'timeout': 20}" and files "None"
+2024-06-11 16:49:40 | DEB | Response for editMessageText: [200] "'{"ok":true,"result":{"message_id":5324,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1718113774,"edit_date":1718113781,"text":"\\u0412\\u044b\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u044f\\u0437\\u044b\\u043a:","entities":[{"offset":0,"length":14,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u00bb\\u00bb\\u00bb    \\u0420\\u0443\\u0441\\u0441\\u043a\\u0438\\u0439    \\u00ab\\u00ab\\u00ab","callback_data":"language_RUS"}],[{"text":"English","callback_data":"language_ENG"}],[{"text":"\\u00ab \\u041d\\u0430\\u0437\\u0430\\u0434","callback_data":"back_to_settings"}]]}}}'"
+2024-06-11 16:49:41 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[{"update_id":722903365,\n"callback_query":{"id":"3729407334900840455","from":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"en","is_premium":true},"message":{"message_id":5324,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1718113774,"edit_date":1718113781,"text":"\\u0412\\u044b\\u0431\\u0435\\u0440\\u0438\\u0442\\u0435 \\u044f\\u0437\\u044b\\u043a:","entities":[{"offset":0,"length":14,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u00bb\\u00bb\\u00bb    \\u0420\\u0443\\u0441\\u0441\\u043a\\u0438\\u0439    \\u00ab\\u00ab\\u00ab","callback_data":"language_RUS"}],[{"text":"English","callback_data":"language_ENG"}],[{"text":"\\u00ab \\u041d\\u0430\\u0437\\u0430\\u0434","callback_data":"back_to_settings"}]]}},"chat_instance":"4318687453770464992","data":"back_to_settings"}}]}'"
+2024-06-11 16:49:41 | DEB | Received 1 updates.
+2024-06-11 16:49:41 | DEB | Make request: "getChatMember" with data: "{'chat_id': '@testik_for', 'user_id': 868320310}" and files "None"
+2024-06-11 16:49:41 | DEB | Response for getChatMember: [200] "'{"ok":true,"result":{"user":{"id":868320310,"is_bot":false,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","language_code":"en","is_premium":true},"status":"creator","is_anonymous":false}}'"
+2024-06-11 16:49:41 | DEB | Make request: "editMessageText" with data: "{'text': '*Привет, это меню ETH Gas Monitoring Bot!*\n\nЗдесь Вы можете регулировать работу бота.', 'chat_id': 868320310, 'message_id': 5324, 'parse_mode': 'markdown', 'reply_markup': '{"inline_keyboard": [[{"text": "Интервалы", "callback_data": "set_interval"}], [{"text": "Язык", "callback_data": "set_language"}, {"text": "Выключить", "callback_data": "turn_on_off"}]]}'}" and files "None"
+2024-06-11 16:49:41 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:49:41 | DEB | Response for editMessageText: [200] "'{"ok":true,"result":{"message_id":5324,"from":{"id":6992604156,"is_bot":true,"first_name":"ETH Gas Monitoring Bot","username":"tokito_gasbot"},"chat":{"id":868320310,"first_name":"Egor","last_name":"Bakhmutov","username":"wndrflp","type":"private"},"date":1718113774,"edit_date":1718113783,"text":"\\u041f\\u0440\\u0438\\u0432\\u0435\\u0442, \\u044d\\u0442\\u043e \\u043c\\u0435\\u043d\\u044e ETH Gas Monitoring Bot!\\n\\n\\u0417\\u0434\\u0435\\u0441\\u044c \\u0412\\u044b \\u043c\\u043e\\u0436\\u0435\\u0442\\u0435 \\u0440\\u0435\\u0433\\u0443\\u043b\\u0438\\u0440\\u043e\\u0432\\u0430\\u0442\\u044c \\u0440\\u0430\\u0431\\u043e\\u0442\\u0443 \\u0431\\u043e\\u0442\\u0430.","entities":[{"offset":0,"length":40,"type":"bold"}],"reply_markup":{"inline_keyboard":[[{"text":"\\u0418\\u043d\\u0442\\u0435\\u0440\\u0432\\u0430\\u043b\\u044b","callback_data":"set_interval"}],[{"text":"\\u042f\\u0437\\u044b\\u043a","callback_data":"set_language"},{"text":"\\u0412\\u044b\\u043a\\u043b\\u044e\\u0447\\u0438\\u0442\\u044c","callback_data":"turn_on_off"}]]}}}'"
+2024-06-11 16:50:01 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:50:01 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:50:21 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:50:22 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:50:42 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:50:42 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:51:02 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:51:02 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:51:22 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:51:22 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:51:42 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:51:42 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:52:02 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:52:02 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:52:22 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:52:23 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:52:43 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:52:43 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:53:03 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:53:03 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:53:23 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:53:23 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:53:43 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:53:43 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:54:03 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:54:03 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:54:23 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:54:23 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:54:43 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:54:44 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:55:04 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:55:04 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:55:24 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:55:24 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:55:44 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:55:44 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:56:04 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:56:04 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:56:24 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:56:24 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:56:44 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:56:45 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:57:05 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:57:05 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:57:25 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:57:25 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:57:45 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:57:45 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:58:05 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:58:05 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:58:25 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:58:25 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:58:45 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:58:45 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:59:06 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:59:06 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:59:26 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:59:26 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 16:59:46 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 16:59:46 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 17:00:06 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 17:00:06 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 17:00:26 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 17:00:26 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 17:00:46 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 17:00:46 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 17:01:06 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 17:01:07 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 17:01:27 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 17:01:27 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 17:01:47 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 17:01:47 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 17:02:07 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 17:02:07 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 17:02:27 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 17:02:27 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 17:02:47 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 17:02:47 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 17:03:07 | DEB | Response for getUpdates: [200] "'{"ok":true,"result":[]}'"
+2024-06-11 17:03:08 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 17:03:26 | INF | Stop polling...
+2024-06-11 17:03:26 | WAR | Goodbye!
+2024-06-11 17:03:26 | DEB | ETH Gas Monitoring Bot has been finished!
+2024-06-11 17:03:26 | INF | Bot: ETH Gas Monitoring Bot [@tokito_gasbot]
+2024-06-11 17:03:26 | DEB | Make request: "getWebhookInfo" with data: "{}" and files "None"
+2024-06-11 17:03:26 | DEB | Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
+2024-06-11 17:03:26 | DEB | Make request: "deleteWebhook" with data: "{'drop_pending_updates': True}" and files "None"
+2024-06-11 17:03:26 | DEB | Response for deleteWebhook: [200] "'{"ok":true,"result":true,"description":"Webhook is already deleted"}'"
+2024-06-11 17:03:26 | WAR | Updates were skipped successfully.
+2024-06-11 17:03:26 | DEB | Make request: "setMyCommands" with data: "{'commands': '[{"command": "/menu", "description": "настройки"}, {"command": "/help", "description": "поддержка"}]'}" and files "None"
+2024-06-11 17:03:26 | DEB | Response for setMyCommands: [200] "'{"ok":true,"result":true}'"
+2024-06-11 17:03:26 | DEB | ETH Gas Monitoring Bot has been started!
+2024-06-11 17:03:26 | INF | Start polling.
+2024-06-11 17:03:26 | DEB | Make request: "getWebhookInfo" with data: "{}" and files "None"
+2024-06-11 17:03:26 | DEB | Response for getWebhookInfo: [200] "'{"ok":true,"result":{"url":"","has_custom_certificate":false,"pending_update_count":0}}'"
+2024-06-11 17:03:26 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 17:03:26 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 139, in make_request
+    async with session.post(url, data=req, **kwargs) as response:
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 1167, in __aenter__
+    self._resp = await self._coro
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client.py", line 586, in _request
+    await resp.start(conn)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\client_reqrep.py", line 905, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiohttp\streams.py", line 616, in read
+    await self._waiter
+aiohttp.client_exceptions.ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 142, in make_request
+    raise exceptions.NetworkError(f"aiohttp client throws an error: {e.__class__.__name__}: {e}")
+aiogram.utils.exceptions.NetworkError: Aiohttp client throws an error: ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2702)
+2024-06-11 17:03:31 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 17:03:31 | DEB | Response for getUpdates: [409] "'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}'"
+2024-06-11 17:03:31 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2024-06-11 17:03:36 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 17:03:36 | DEB | Response for getUpdates: [409] "'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}'"
+2024-06-11 17:03:36 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2024-06-11 17:03:41 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 17:03:41 | DEB | Response for getUpdates: [409] "'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}'"
+2024-06-11 17:03:41 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2024-06-11 17:03:46 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 17:03:46 | DEB | Response for getUpdates: [409] "'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}'"
+2024-06-11 17:03:46 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2024-06-11 17:03:51 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 17:03:51 | DEB | Response for getUpdates: [409] "'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}'"
+2024-06-11 17:03:51 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2024-06-11 17:03:56 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 17:03:56 | DEB | Response for getUpdates: [409] "'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}'"
+2024-06-11 17:03:56 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2024-06-11 17:04:01 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 17:04:01 | DEB | Response for getUpdates: [409] "'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}'"
+2024-06-11 17:04:01 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2024-06-11 17:04:06 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 17:04:06 | DEB | Response for getUpdates: [409] "'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}'"
+2024-06-11 17:04:06 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2024-06-11 17:04:11 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 17:04:11 | DEB | Response for getUpdates: [409] "'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}'"
+2024-06-11 17:04:11 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2024-06-11 17:04:16 | DEB | Make request: "getUpdates" with data: "{'timeout': 20}" and files "None"
+2024-06-11 17:04:17 | DEB | Response for getUpdates: [409] "'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}'"
+2024-06-11 17:04:17 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running
+2024-06-11 17:04:22 | DEB | Make request: "getUpdates" with data: "{'offset': 722903366, 'timeout': 20}" and files "None"
+2024-06-11 17:04:22 | DEB | Response for getUpdates: [409] "'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}'"
+2024-06-11 17:04:22 | ERR | Cause exception while getting updates.
+Traceback (most recent call last):
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\dispatcher\dispatcher.py", line 381, in start_polling
+    updates = await self.bot.get_updates(
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\bot.py", line 110, in get_updates
+    result = await self.request(api.Methods.GET_UPDATES, payload)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\base.py", line 236, in request
+    return await api.make_request(await self.get_session(), self.server, self.__token, method, data, files,
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 140, in make_request
+    return check_result(method, response.content_type, response.status, await response.text())
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\bot\api.py", line 119, in check_result
+    exceptions.ConflictError.detect(description)
+  File "C:\Users\Егор\OneDrive\Рабочий стол\AT Industries\ORDER00X\gas_bot\.venv\lib\site-packages\aiogram\utils\exceptions.py", line 140, in detect
+    raise err(cls.text or description)
+aiogram.utils.exceptions.TerminatedByOtherGetUpdates: Terminated by other getupdates request; make sure that only one bot instance is running

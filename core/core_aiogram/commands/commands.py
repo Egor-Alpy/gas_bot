@@ -50,7 +50,7 @@ async def help_func(message: types.Message, LAN):
         await bot.send_message(chat_id=message.chat.id, text=MSG[LAN]['ADMIN']['HELP'], parse_mode='markdown')
 
 
-@dp.message_handler()
+'''@dp.message_handler()
 async def all_text_handler(message: types.Message):
     LAN = table_users.get_user_language(message.chat.id)
     if not await check_user_subscriptions(message.chat.id):
@@ -59,7 +59,7 @@ async def all_text_handler(message: types.Message):
                                parse_mode='markdown')
     else:
         await message.reply(text=MSG[LAN]['OTHER'],
-                            parse_mode='markdown')
+                            parse_mode='markdown')'''
 
 
 COMMAND_FUNCTIONS_DICT = {
