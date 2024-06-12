@@ -20,6 +20,8 @@ from multiprocessing import Process
 # ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP -----
 async def on_startup(_):
     await set_commands()
+    thread_sending_messages = Thread(target=start_message_sender, daemon=True).start()
+    logger.info('Thread: Sending process has been started!')
     logger.debug(f'{PROJECT_NAME} has been started!')
 
 
@@ -49,9 +51,6 @@ def main():
 
 
 if __name__ == '__main__':
-    p1 = Process(target=start_message_sender)
-    p1.start()
-    logger.info('Thread: Sending process has been started!')
     main()
     logger.info('Thread: Main process has been started!')
 
