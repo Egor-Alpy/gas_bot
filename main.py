@@ -25,14 +25,7 @@ async def on_startup(_):
     logger.debug(f'{PROJECT_NAME} has been started!')
 
 
-async def async_funcion_whatever():
-    print('before wever')
-    await asyncio.wait_for(await bot.send_message('868320310', 'hello'))
-    print('after wever')
-
-
 def start_message_sender():
-
     asyncio.run(start_sending())
 
 
