@@ -13,15 +13,14 @@ from core.core_aiogram.bot_creation import dp, bot
 from core.main_loop import start_sending
 import asyncio
 
-from threading import Thread
 from multiprocessing import Process
 
 
 # ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP -----
 async def on_startup(_):
     await set_commands()
-    thread_sending_messages = Thread(target=start_message_sender, daemon=True).start()
-    logger.info('Thread: Sending process has been started!')
+    process_sending_messages = Process(target=start_message_sender).start()
+    logger.info('PROCESS: Sending process has been started!')
     logger.debug(f'{PROJECT_NAME} has been started!')
 
 
@@ -44,8 +43,8 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
-    logger.info('Thread: Main process has been started!')
+    process_main = Process(target=main).start()
+    logger.info('PROCESS: Main process has been started!')
 
 
 
