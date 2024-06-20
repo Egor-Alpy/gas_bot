@@ -9,7 +9,7 @@ from data.config import PROJECT_NAME
 
 from core.core_aiogram.commands.commands import set_commands
 from core.logger_config import logger
-from core.core_aiogram.bot_creation import dp, bot
+from core.core_aiogram.bot_creation import dp
 from core.main_loop import start_sending
 import asyncio
 
@@ -17,15 +17,15 @@ from multiprocessing import Process
 
 
 # ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP -----
+def start_message_sender():
+    asyncio.run(start_sending())
+
+
 async def on_startup(_):
     await set_commands()
     process_sending_messages = Process(target=start_message_sender).start()
     logger.info('PROCESS: Sending process has been started!')
     logger.debug(f'{PROJECT_NAME} has been started!')
-
-
-def start_message_sender():
-    asyncio.run(start_sending())
 
 
 def main():
