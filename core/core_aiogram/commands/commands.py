@@ -29,9 +29,7 @@ async def commands_all(message: types.Message) -> None:
                                  name=message.from_user.first_name, surname=message.from_user.last_name)
             logger.info(
                 f'User has been added to the DB [id: {message.from_user.id}, username: {message.from_user.username}]')
-            LAN = 'ENG'
-    else:
-        LAN = table_users.get_user_language(message.chat.id)
+    LAN = table_users.get_user_language(message.chat.id)
     if message.text[1:] in CMD_ADMIN:
         if message.chat.id not in ADMINS:
             await bot.send_message(chat_id=message.chat.id, text=MSG[LAN]['NO_ROOTS'])

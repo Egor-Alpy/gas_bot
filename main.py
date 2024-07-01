@@ -16,16 +16,6 @@ import asyncio
 
 
 # ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP -----
-# Infinity loop section
-def start_message_sender():
-    asyncio.run(start_sending())
-
-
-def start_infinity_loop_process():
-    process_sending_messages = Process(target=start_message_sender).start()
-    logger.info('PROCESS: INFINITY LOOP process has been started!')
-
-
 async def on_startup(_):
     await set_commands()
     logger.debug(f'{PROJECT_NAME} MAIN has been created!')
@@ -52,7 +42,7 @@ def infinity_sending_loop():
     while True:
         try:
             logger.debug(f'Infinity loop has been started')
-            start_message_sender()
+            asyncio.run(start_sending())
         except KeyboardInterrupt:
             logger.debug(f'Infinity loop has been finished!')
             exit()

@@ -86,7 +86,7 @@ try:
             data = {
                 'chat_id': chat_id,
                 'text': msg,
-                'parse_mode': 'Markdown',
+                'parse_mode': 'html',
                 'disable_web_page_preview': True
             }
             response = requests.post(url, json=data)
