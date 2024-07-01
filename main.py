@@ -6,26 +6,29 @@ from aiogram import executor
 import time
 
 from data.config import PROJECT_NAME
-
 from core.core_aiogram.commands.commands import set_commands
 from core.logger_config import logger
 from core.core_aiogram.bot_creation import dp
+
+from multiprocessing import Process
 from core.main_loop import start_sending
 import asyncio
 
-from multiprocessing import Process
-
 
 # ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP ----- ON_STARTUP -----
+# Infinity loop section
 def start_message_sender():
     asyncio.run(start_sending())
 
 
+def start_infinity_loop_process():
+    process_sending_messages = Process(target=start_message_sender).start()
+    logger.info('PROCESS: INFINITY LOOP process has been started!')
+
+
 async def on_startup(_):
     await set_commands()
-    process_sending_messages = Process(target=start_message_sender).start()
-    logger.info('PROCESS: Sending process has been started!')
-    logger.debug(f'{PROJECT_NAME} has been started!')
+    logger.debug(f'{PROJECT_NAME} MAIN has been created!')
 
 
 def main():
@@ -39,18 +42,9 @@ def main():
             logger.debug(f'{PROJECT_NAME} has been finished!')
         except Exception as e:
             logger.error(f'Exception in the main execution block: {e}')
-            time.sleep(5)
+            time.sleep(100)
 
 
 if __name__ == '__main__':
     process_main = Process(target=main).start()
-    logger.info('PROCESS: Main process has been started!')
-
-
-
-
-
-
-
-
-
+    start_infinity_loop_process()
