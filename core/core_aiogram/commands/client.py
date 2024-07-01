@@ -151,12 +151,6 @@ async def start_func(message: types.Message):
 
 
 async def settings_func(message: types.Message, LAN):
-    if str(message.from_user.id) not in table_users.get_all_user_id():
-        table_users.add_user(user_id=message.from_user.id, username=message.from_user.username,
-                             name=message.from_user.first_name, surname=message.from_user.last_name)
-        logger.info(
-            f'User has been added to the DB [id: {message.from_user.id}, username: {message.from_user.username}]')
-        LAN = 'ENG'
     kb_settings = InlineKeyboardMarkup()
     btn_choose_interval = InlineKeyboardButton(BUTTONS[LAN]['INTERVAL'], callback_data='set_interval')
     btn_choose_language = InlineKeyboardButton(BUTTONS[LAN]['LANGUAGE'], callback_data='set_language')
