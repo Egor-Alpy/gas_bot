@@ -31,7 +31,7 @@ async def on_startup(_):
     logger.debug(f'{PROJECT_NAME} MAIN has been created!')
 
 
-def main():
+def main_loop():
     while True:
         try:
             executor.start_polling(
@@ -40,11 +40,40 @@ def main():
                 on_startup=on_startup
             )
             logger.debug(f'{PROJECT_NAME} has been finished!')
+        except KeyboardInterrupt:
+            logger.debug(f'{PROJECT_NAME} main loop has been finished!')
+            exit()
         except Exception as e:
-            logger.error(f'Exception in the main execution block: {e}')
+            logger.error(f'Exception in the main_loop execution block: {e}')
             time.sleep(100)
 
 
+def infinity_sending_loop():
+    while True:
+        try:
+            logger.debug(f'Infinity loop has been started')
+            start_message_sender()
+        except KeyboardInterrupt:
+            logger.debug(f'Infinity loop has been finished!')
+            exit()
+        except Exception as e:
+            logger.error(f'Exception in the infinity loop execution block: {e}')
+            time.sleep(100)
+
+
+def main():
+    try:
+        # 02
+        process = Process(target=infinity_sending_loop)
+        process.start()
+        # 01
+        main_loop()
+    except KeyboardInterrupt:
+        logger.debug(f'{PROJECT_NAME} main_loop has been finished!')
+        exit()
+    except Exception as e:
+        logger.error(f'Exception in the main_loop execution block: {e}')
+
+
 if __name__ == '__main__':
-    process_main = Process(target=main).start()
-    start_infinity_loop_process()
+    main()
